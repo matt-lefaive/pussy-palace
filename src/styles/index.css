@@ -1,0 +1,116 @@
+body {
+  font: normal 20px Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('../../public/assets/images/background.png');
+  background-size: cover;
+  color: white;
+}
+
+h1 {
+  color: #FF5C97;
+  font-size: 40px;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+}
+
+h3 {
+  color: #C4C4C4;
+  font-size: 30px;
+}
+
+.pink {
+  color: #FF5C97;
+}
+
+.line-height-24 {
+  line-height: 24px;
+}
+
+.line-height-28 {
+  line-height: 28px;
+}
+
+.letter-02 {
+  letter-spacing: 0.2px;
+}
+
+/* ----- Dividers ----- */
+.divider {
+  height: 3px;
+  background-color: white;
+}
+
+/* ----- Side Menu for Static Content Pages | Left Side ----- */
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.sidemenu {
+  height: 100vh;
+  min-width: 600px;
+  padding-left: 180px;
+  color: white;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.sidemenu a {
+  display: block;
+  margin-top: 60px;
+  font-size: 30px;
+  color: #C4C4C4;
+}
+
+.sidemenu a:hover {
+  text-decoration: underline;
+}
+
+.sidemenu a.active {
+  color: #FF5C97;
+}
+
+/* ----- Content Pane | Right Side ----- */
+.content {
+  margin-right: 180px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.title-section {
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* ----- MEDIA QUERIES ----- */
+/* ----- Mobile ----- */
+@media (max-width: 480px) {
+
+}
+
+/* ----- Tablets ----- */
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* ----- Small Screens ----- */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* ----- Large Screens ----- */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+}
+
+/* ----- Extra Large Screens ----- */
+@media (min-width: 1201px) {
+
+}
