@@ -1,10 +1,14 @@
 import React from 'react';
+import SideMenu from '../components/side-menu';
 
 const Before = () => {
     return (
-        <>
-            <h1>Before</h1>
-        </>
+        <div class='wrapper'>
+            <SideMenu active='before'/>
+            <div class='content'>
+                <h1>BEFORE THE PALACE</h1>
+            </div>
+        </div>
     )
 }
 

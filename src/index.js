@@ -7,6 +7,8 @@ import {
 
 import './styles/index.css';
 import './styles/circle-menu.css';
+import './styles/home.css';
+import './styles/diagonal-circle-menu.css';
 
 import Home from './pages/home';
 import Before from './pages/before';
