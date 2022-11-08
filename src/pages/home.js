@@ -35,12 +35,10 @@ const Home = () => {
     useEffect(() => {
         const black1 = document.getElementById('black-1');
         const black2 = document.getElementById('black-2');
-
         
         black1.style.transition = fadeOut.transition;
         black1.style.opacity = fadeOut.opacity;
         black1.style.visibility = fadeOut.visibility;
-        
         
         setTimeout(() => {
             black2.style.transition = fadeOut.transition;
@@ -54,7 +52,7 @@ const Home = () => {
             <div id='black-1' style={{...blackScreen, zIndex: 5}}></div>
             <div id='black-2' style={{...blackScreen, zIndex: 3}}></div>
             <div style={{display: 'flex'}}>
-                <div class='project-description'>
+                <div className='project-description'>
                     <div style={{height: 'auto', width: '175px'}}>
                         <CollabLogo />
                     </div>
@@ -74,7 +72,7 @@ const Home = () => {
                             Enter the timeline to explore the Palace, the infamous 2000 police raid, the early histories that informed this moment of radical sexual culture in Toronto's LGBTQ+ communities, and more! 
                         </p>
                         <p id='p5'>
-                            Many thanks to all the narrators for making this digital exhibit possible, as well as to the Collaboratory team; a full list of credits can be found here.  
+                            Many thanks to all the narrators for making this digital exhibit possible.  
                         </p>
                     </div>
                 </div>

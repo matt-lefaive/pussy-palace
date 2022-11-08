@@ -63,7 +63,7 @@
 
 #diagonal {
   position: absolute;
-  left: 400px;
+  left: 351px;
   top: 50px;
   height: 386px;
   width: 8px;
@@ -85,23 +85,23 @@
 
 /* ---- CIRCLE 1: Before the Palace ----- */
 #circle-1 {
-  left: 385px;
+  left: 336px;
   background-image: url('../../public/assets/images/home/Home_Before_Thumbnail_BG100_pink.png');
   background-size: cover;
 }
 
 #circle-1-cover {
   position: absolute;
-  left: 385px;
+  left: 336px;
   height: 64px;
   width: 260px;
-  z-index: 1;
+  z-index: 2;
 }
 
 #circle-1-cover:hover ~ #circle-1 {box-shadow: 0 0 30px #FF5C97;}
 
 #circle-label-1 {
-  left: 473px;
+  left: 424px;
   top: 10px;
 }
 
@@ -109,7 +109,7 @@
 /* ----- Circle 2: Building the Palace ----- */
 #circle-2 {
   top: 95px;
-  left: 377px;
+  left: 328px;
   background-image: url('../../public/assets/images/home/Home_Building_Thumbnail_BG100_pink.png');
   background-size: cover;
 }
@@ -117,24 +117,24 @@
 #circle-2-cover {
   position: absolute;
   top: 95px;
-  left: 377px;
+  left: 328px;
   height: 64px;
   width: 280px;
-  z-index: 1;
+  z-index: 2;
 }
 
 #circle-2-cover:hover ~ #circle-2 {box-shadow: 0 0 30px #FF5C97;}
 
 #circle-label-2 {
   top: 105px;
-  left: 465px;
+  left: 416px;
 }
 
 
 /* ----- Circle 3: Explore the Palace ----- */
 #circle-3 {
   top: 190px;
-  left: 370px;
+  left: 321px;
   background-image: url('../../public/assets/images/home/Home_Explore_Thumbnail_BG100_pink.png');
   background-size: cover;
 }
@@ -142,23 +142,24 @@
 #circle-3-cover {
   position: absolute;
   top: 190px;
-  left: 370px;
+  left: 321px;
   height: 64px;
   width: 270px;
+  z-index: 2;
 }
 
 #circle-3-cover:hover ~ #circle-3 {box-shadow: 0 0 30px #FF5C97;}
 
 #circle-label-3 {
   top: 200px;
-  left: 458px;
+  left: 409px;
 }
 
 
 /* ----- Circle 4: Raid on the Palace ----- */
 #circle-4 {
   top: 285px;
-  left: 363px;
+  left: 314px;
   background-image: url('../../public/assets/images/home/Home_Raid_Thumbnail_BG100_pink.png');
   background-size: cover;
 }
@@ -166,22 +167,23 @@
 #circle-4-cover {
   position: absolute;
   top: 285px;
-  left: 363px;
+  left: 314px;
   height: 64px;
   width: 270px;
+  z-index: 2
 }
 
 #circle-4-cover:hover ~ #circle-4 {box-shadow: 0 0 30px #FF5C97;}
 
 #circle-label-4 {
   top: 295px;
-  left: 451px;
+  left: 402px;
 }
 
 
 /* ----- Circle 5: After the Palace ----- */
 #circle-5 {
-  left: 355px;
+  left: 306px;
   top: 380px;
   background-image: url('../../public/assets/images/home/Home_After_Thumbnail_BG100_pink.png');
   background-size: cover;
@@ -190,14 +192,35 @@
 #circle-5-cover {
   position: absolute;
   top: 380px;
-  left: 355px;
+  left: 306px;
   height: 64px;
   width: 245px;
+  z-index: 2
 }
 
 #circle-5-cover:hover ~ #circle-5 {box-shadow: 0 0 30px #FF5C97;}
 
 #circle-label-5 {
   top: 390px;
-  left: 443px;
+  left: 394px;
 }
+
+/* ----- Credits Button ----- */
+a.credits {
+  position: absolute;
+  top: 480px;
+  left: 531px;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+}
+
+a.credits:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+}
+

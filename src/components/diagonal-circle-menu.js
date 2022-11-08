@@ -26,8 +26,6 @@ const DiagonalCircleMenu = () => {
             {title: 'After the Palace', subtitle: 'Researcher Reflections', date:'2021 - 2022'}
         ][activeCircle - 1]);
 
-        // Hide "recommended start" label as appropriate
-        document.getElementById('recommended-start').style.visibility = activeCircle === 3 ? 'visible' : 'hidden';
     }, [activeCircle])
     
     const onMouseEnterCover = e => setActiveCircle(Number(e.target.id.replace('circle-', '').replace('-cover', '')));
@@ -35,7 +33,6 @@ const DiagonalCircleMenu = () => {
     
     return (
         <div className="line-menu-container">
-            <span id="recommended-start">Recommended Start</span>
             <div id="large-circle-label">
                 <div className='large-circle-label-title'>{largeCircleLabelText.title}</div>
                 <div className='circle-title'>{largeCircleLabelText.subtitle}</div>
@@ -73,6 +70,7 @@ const DiagonalCircleMenu = () => {
                 <div className='circle-subtitle'>2021-2022</div>
             </div>
             <div id='large-circle' style={{backgroundImage: backgroundImage}}></div>
+            <a href='/credits' className='credits'>Credits</a>
         </div>
     )
 }
