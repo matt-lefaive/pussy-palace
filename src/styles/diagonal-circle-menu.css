@@ -14,13 +14,13 @@
 
 /* ---- large-circle ----- */
 #large-circle {
-  background-color: #FF5C97;
+  border: 3px solid #FF5C97;
   height: 280px;
   width: 280px;
   border-radius: 50%;
   position: absolute;
   top: 60px;
-  background-image: url('../../public/assets/images/home/Home_Explore_Thumbnail_BG100_pink.png');
+  background-image: url('../../public/assets/images/home/Home_Explore_Thumbnail_BG90.png');
   background-size: cover;
   transition: background-image 300ms ease;
 }
@@ -75,8 +75,8 @@
   position: absolute;
   height: 64px;
   width: 64px;
-  background-color: #FF5C97;
   border-radius: 50%;
+  border: 3px solid #FF5C97;
 }
 
 .small-circle-label {
@@ -86,7 +86,7 @@
 /* ---- CIRCLE 1: Before the Palace ----- */
 #circle-1 {
   left: 336px;
-  background-image: url('../../public/assets/images/home/Home_Before_Thumbnail_BG100_pink.png');
+  background-image: url('../../public/assets/images/home/Home_Before_Thumbnail_BG90.png');
   background-size: cover;
 }
 
@@ -97,6 +97,8 @@
   width: 260px;
   z-index: 2;
 }
+
+#circle-1-cover:hover {cursor: pointer;}
 
 #circle-1-cover:hover ~ #circle-1 {box-shadow: 0 0 30px #FF5C97;}
 
@@ -110,7 +112,7 @@
 #circle-2 {
   top: 95px;
   left: 328px;
-  background-image: url('../../public/assets/images/home/Home_Building_Thumbnail_BG100_pink.png');
+  background-image: url('../../public/assets/images/home/Home_Building_Thumbnail_BG90.png');
   background-size: cover;
 }
 
@@ -122,6 +124,8 @@
   width: 280px;
   z-index: 2;
 }
+
+#circle-2-cover:hover {cursor: pointer;}
 
 #circle-2-cover:hover ~ #circle-2 {box-shadow: 0 0 30px #FF5C97;}
 
@@ -135,7 +139,7 @@
 #circle-3 {
   top: 190px;
   left: 321px;
-  background-image: url('../../public/assets/images/home/Home_Explore_Thumbnail_BG100_pink.png');
+  background-image: url('../../public/assets/images/home/Home_Explore_Thumbnail_BG90.png');
   background-size: cover;
 }
 
@@ -147,6 +151,8 @@
   width: 270px;
   z-index: 2;
 }
+
+#circle-3-cover:hover {cursor: pointer;}
 
 #circle-3-cover:hover ~ #circle-3 {box-shadow: 0 0 30px #FF5C97;}
 
@@ -160,7 +166,7 @@
 #circle-4 {
   top: 285px;
   left: 314px;
-  background-image: url('../../public/assets/images/home/Home_Raid_Thumbnail_BG100_pink.png');
+  background-image: url('../../public/assets/images/home/Home_Raid_Thumbnail_BG90.png');
   background-size: cover;
 }
 
@@ -172,6 +178,8 @@
   width: 270px;
   z-index: 2
 }
+
+#circle-4-cover:hover {cursor: pointer;}
 
 #circle-4-cover:hover ~ #circle-4 {box-shadow: 0 0 30px #FF5C97;}
 
@@ -185,7 +193,7 @@
 #circle-5 {
   left: 306px;
   top: 380px;
-  background-image: url('../../public/assets/images/home/Home_After_Thumbnail_BG100_pink.png');
+  background-image: url('../../public/assets/images/home/Home_After_Thumbnail_BG90.png');
   background-size: cover;
 }
 
@@ -197,6 +205,8 @@
   width: 245px;
   z-index: 2
 }
+
+#circle-5-cover:hover {cursor: pointer;}
 
 #circle-5-cover:hover ~ #circle-5 {box-shadow: 0 0 30px #FF5C97;}
 

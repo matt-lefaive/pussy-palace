@@ -1,20 +1,20 @@
 import {React, useState, useEffect} from 'react';
 
 const DiagonalCircleMenu = () => {
-    
     const [activeCircle, setActiveCircle] = useState(3);
-    const [backgroundImage, setBackgroundImage] = useState(`url(/assets/images/home/Home_Explore_Thumbnail_BG100_pink.png)`);
+    const [backgroundImage, setBackgroundImage] = useState(`url(/assets/images/home/Home_Explore_Thumbnail_BG90.png)`);
     const [largeCircleLabelText, setLargeCircleLabelText] = useState({title: 'Explore the Palace', subtitle: 'An Average Night', date:'2000'})
+    const [targetLink, setTargetLink] = useState('#');
 
     // Update the large circle based on which small circle was last hovered over
     useEffect(() => {
         // Change background image
         setBackgroundImage([
-            `url(/assets/images/home/Home_Before_Thumbnail_BG100_pink.png)`,
-            `url(/assets/images/home/Home_Building_Thumbnail_BG100_pink.png)`,
-            `url(/assets/images/home/Home_Explore_Thumbnail_BG100_pink.png)`,
-            `url(/assets/images/home/Home_Raid_Thumbnail_BG100_pink.png)`,
-            `url(/assets/images/home/Home_After_Thumbnail_BG100_pink.png)`
+            `url(/assets/images/home/Home_Before_Thumbnail_BG90.png)`,
+            `url(/assets/images/home/Home_Building_Thumbnail_BG90.png)`,
+            `url(/assets/images/home/Home_Explore_Thumbnail_BG90.png)`,
+            `url(/assets/images/home/Home_Raid_Thumbnail_BG90.png)`,
+            `url(/assets/images/home/Home_After_Thumbnail_BG90.png)`
         ][activeCircle - 1]);
 
         // Change label text
@@ -26,10 +26,20 @@ const DiagonalCircleMenu = () => {
             {title: 'After the Palace', subtitle: 'Researcher Reflections', date:'2021 - 2022'}
         ][activeCircle - 1]);
 
+        // Set the target link for navigation if clicked
+        setTargetLink([
+            '/before',
+            '/building',
+            '/explore',
+            '/raid',
+            '/after'
+        ][activeCircle - 1]);
+
     }, [activeCircle])
     
     const onMouseEnterCover = e => setActiveCircle(Number(e.target.id.replace('circle-', '').replace('-cover', '')));
     
+    const onClickCircle = () => window.location.href = targetLink;
     
     return (
         <div className="line-menu-container">
@@ -39,11 +49,11 @@ const DiagonalCircleMenu = () => {
                 <div className='circle-subtitle'>{largeCircleLabelText.date}</div>
             </div>
             <div id='diagonal'></div>
-            <div id='circle-1-cover' onMouseEnter={onMouseEnterCover}></div>
-            <div id='circle-2-cover' onMouseEnter={onMouseEnterCover}></div>
-            <div id='circle-3-cover' onMouseEnter={onMouseEnterCover}></div>
-            <div id='circle-4-cover' onMouseEnter={onMouseEnterCover}></div>
-            <div id='circle-5-cover' onMouseEnter={onMouseEnterCover}></div>
+            <div id='circle-1-cover' onMouseEnter={onMouseEnterCover} onClick={onClickCircle}></div>
+            <div id='circle-2-cover' onMouseEnter={onMouseEnterCover} onClick={onClickCircle}></div>
+            <div id='circle-3-cover' onMouseEnter={onMouseEnterCover} onClick={onClickCircle}></div>
+            <div id='circle-4-cover' onMouseEnter={onMouseEnterCover} onClick={onClickCircle}></div>
+            <div id='circle-5-cover' onMouseEnter={onMouseEnterCover} onClick={onClickCircle}></div>
             <div id='circle-1' className='small-circle'></div>
             <div id='circle-2' className='small-circle'></div>
             <div id='circle-3' className='small-circle'></div>
@@ -69,7 +79,7 @@ const DiagonalCircleMenu = () => {
                 <div className='circle-title'>After the Palace</div>
                 <div className='circle-subtitle'>2021-2022</div>
             </div>
-            <div id='large-circle' style={{backgroundImage: backgroundImage}}></div>
+            <div id='large-circle' style={{backgroundImage: backgroundImage}} onClick={onClickCircle}></div>
             <a href='/credits' className='credits'>Credits</a>
         </div>
     )

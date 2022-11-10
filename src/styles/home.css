@@ -1,41 +1,40 @@
 /* ----- HOMEPAGE ----- */
 .project-description {
     flex-grow: 0 0 650px;
-    margin-left: 7.4%;
-    padding-top: 25px;
+    padding-top: 5%;
 }
 
 .menu-buffer {
   flex: 1 0;
 }
   
-  /* ----- MEDIA QUERIES ----- */
-  /* ----- Mobile ----- */
-  @media (max-width: 480px) {
-    .project-description {
-      margin-left: 40px;
-    }
-  }
-  
-  /* ----- Tablets ----- */
-  @media (max-width: 768px) {
-    .project-description {
-      margin-left: 40px;
-    }
-  }
-  
-  /* ----- Small Screens ----- */
-  @media (max-width: 1024px) {
-    .project-description {
-      margin-left: 40px;
-    }
-  }
-  
-  /* ----- Large Screens ----- */
-  @media (max-width: 1500px) {
-    .project-description {
-      margin-left: 40px;
-    }
-  }
 
-  /* ------ Extra Large Screen ----- */
+/* ----- HEIGHT-BASED MEDIA QUERIES ----- */
+@media (max-height: 800px) {
+  .project-description {
+    padding-top: 10px;
+  }
+}
+
+/* ----- MEDIA QUERIES ----- */
+/* ----- Mobile ----- */
+@media (max-width: 480px) {
+    
+}
+  
+/* ----- Tablets ----- */
+@media (max-width: 768px) {
+    
+}
+  
+/* ----- Small Screens ----- */
+@media (max-width: 1024px) {
+
+}
+  
+/* ----- Large Screens ----- */
+@media (max-width: 1500px) {
+    
+}
+
+/* ------ Extra Large Screen ----- */

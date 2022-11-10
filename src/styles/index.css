@@ -26,10 +26,12 @@ h3 {
   font-size: 30px;
 }
 
-.pink {
-  color: #FF5C97;
-}
+/* ----- Colours ----- */
+.pink {color: #FF5C97;}
+.white {color: white;}
+.grey {color: #C4C4C4;}
 
+/* ----- Typography ----- */
 .line-height-24 {
   line-height: 24px;
 }
@@ -40,6 +42,10 @@ h3 {
 
 .letter-02 {
   letter-spacing: 0.2px;
+}
+
+.center {
+  text-align: center;
 }
 
 /* ----- Dividers ----- */
@@ -53,23 +59,28 @@ h3 {
   box-sizing: border-box;
 }
 
-.wrapper {
+.page-wrapper {
   display: flex;
+  align-items: stretch;
+  padding-top: 40px;
 }
 
 .sidemenu {
-  height: 100vh;
-  min-width: 600px;
-  padding-left: 180px;
+  width: 324px;
+  padding-left: 80px;
   color: white;
   box-sizing: border-box;
   overflow: scroll;
+  flex-shrink: 0;
 }
 
 .sidemenu a {
   display: block;
-  margin-top: 60px;
-  font-size: 30px;
+  margin-top: 36px;
+  font-size: 19px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.2px;
   color: #C4C4C4;
   text-decoration: none;
 }
@@ -82,11 +93,17 @@ h3 {
   color: #FF5C97;
 }
 
+.sidemenu-links-wrapper {
+  text-align: right;
+  border-right: 1px solid white;
+  padding-right: 16px;
+}
+
 /* ----- Content Pane | Right Side ----- */
 .content {
-  margin-right: 180px;
-  height: 100vh;
+  padding: 0px 80px 0px 80px;
   overflow: scroll;
+  flex-grow: 1;
 }
 
 .title-section {
@@ -94,7 +111,24 @@ h3 {
   margin-top: 70px;
 }
 
-/* ----- HOMEPAGE ----- */
+h2.content-title {
+  font-size: 28px;
+  line-height: 32px;
+  margin-top: 0;
+}
+
+h3.content-subtitle {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-top: -16px;
+}
+
+img.banner {
+  height: auto;
+  max-width: 100%;
+  border-top: 3px solid white;
+  width: auto\9 /* IE8 */
+}
 
 
 /* ----- MEDIA QUERIES ----- */

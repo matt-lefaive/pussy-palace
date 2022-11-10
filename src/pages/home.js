@@ -5,7 +5,7 @@ import CollabLogo from '../components/collab-logo'
 
 const Home = () => {
     const SIDE_WIDTH = 600;
-    const TRANSITION_SPEED = '1.5s'
+    const TRANSITION_SPEED = '1s'
     
     const descriptionWrapper = {
         position: 'relative',
@@ -44,7 +44,7 @@ const Home = () => {
             black2.style.transition = fadeOut.transition;
             black2.style.opacity = fadeOut.opacity;
             black2.style.visibility = fadeOut.visibility;
-        }, 2000)
+        }, 1500)
     });
 
     return (
@@ -52,6 +52,7 @@ const Home = () => {
             <div id='black-1' style={{...blackScreen, zIndex: 5}}></div>
             <div id='black-2' style={{...blackScreen, zIndex: 3}}></div>
             <div style={{display: 'flex'}}>
+                <div className='menu-buffer'></div>
                 <div className='project-description'>
                     <div style={{height: 'auto', width: '175px'}}>
                         <CollabLogo />
@@ -76,7 +77,7 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className='menu-buffer'></div>
+                <div className='menu-buffer' style={{maxWidth:'50px'}}></div>
                 <div style={{display:'flex', alignItems:'center'}}>
                     <DiagonalCircleMenu />
                 </div>
