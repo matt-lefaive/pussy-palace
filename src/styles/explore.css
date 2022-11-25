@@ -1,0 +1,138 @@
+
+/* ----- ROOM STYLING (GENERAL) ----- */
+.room-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+
+
+.room-container {
+  display: flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  height: 100vh;
+}
+
+.room {
+  overflow: auto;
+  width: 2800px;
+  min-width: 934px;
+  height: 2160px;
+  min-height: 720px;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.entrance-overlay {
+  width: 2800px;
+  min-width: 934px;
+  height: 2160px;
+  min-height: 720px;
+  background-size: 100% 100%;
+  position: absolute;
+  background-color: red;
+  transition: opacity 5s ease;
+  z-index: 5;
+  position: absolute;
+  opacity: 1;
+}
+
+.room-buffer {
+  flex: 1;
+}
+
+.room-object {
+  position: absolute;
+  z-index: 2;
+}
+
+div.room-object > svg {
+  height: 100%;
+  width: 100%;
+  /*-webkit-filter: drop-shadow( 0px, 0px, 30px, white);
+  filter: drop-shadow( 0px, 0px, 30px, white);*/
+}
+
+.object-glow:hover {
+  cursor: pointer;
+}
+
+svg:hover {
+  filter:
+    drop-shadow(0 0 10px #ff5c97) 
+    drop-shadow(0 0 10px #ff5c97) 
+    /* drop-shadow(-2px 2px 5px #ff5c97)  */
+    /* drop-shadow(2px -2px 5px #ff5c97)  */
+    /* drop-shadow(-2px -2px 10px #ff5c97) */
+    ;
+}
+
+
+/* ----- SIDEBAR STYLING ----- */
+.explore-sidebar {
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-y: auto;
+  flex-shrink: 0;
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  padding: 0px 32px 0px 32px;
+}
+
+.explore-sidebar-title h1 {
+  font-size: 35px;
+  color: #FF5C97;
+  line-height: 36px;
+}
+
+
+  /* ----- ROOM SPECIFICS ----- */
+  /* ----- 00 - Entrance ----- */
+#entrance-assets {
+  bottom: 0;
+}
+
+#entrance-door {
+  height: 22.6%;
+  width: 11.6%;
+  bottom: 2.3%;
+  left: 52.5%;
+}
+
+  /* ----- RESIZE ROOM BASED ON SCREEN SIZE ----- */
+  @media screen and (min-width: 0px) {
+    .room, .entrance-overlay {
+        width: 934px;
+        height: 720px;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    .room, .entrance-overlay {
+        width: 997px;
+        height: 788px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .room, .entrance-overlay {
+        width: 1051px;
+        height: 900px;
+    }
+  }
+
+  @media screen and (min-width: 1536px) {
+    .room, .entrance-overlay {
+        width: 1141px;
+        height: 864px;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .room, .entrance-overlay {
+        width: 1402px;
+        height: 1080px;
+    }
+  }

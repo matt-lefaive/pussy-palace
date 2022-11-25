@@ -9,6 +9,7 @@ import './styles/index.css';
 import './styles/circle-menu.css';
 import './styles/home.css';
 import './styles/diagonal-circle-menu.css';
+import './styles/explore.css'
 
 import Home from './pages/home';
 import Before from './pages/before';
@@ -17,6 +18,8 @@ import Raid from './pages/raid';
 import Explore from './pages/explore';
 import Credits from './pages/credits';
 import After from './pages/after';
+
+import Pool from './rooms/pool';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: 'explore',
     element: <Explore />
+  },
+  {
+    path: 'explore/pool',
+    element: <Pool />
   },
   {
     path: 'credits',
