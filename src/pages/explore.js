@@ -3,15 +3,10 @@ import ExploreSidebar from '../components/explore-sidebar';
 import Room from '../components/room';
 import EntranceAssets from '../svg/Entrance_Assets';
 import EntranceDoor from '../svg/Entrance_Door';
+import EntranceOverlay from '../components/entrance-overlay';
 
 const Explore = () => {
-    const photoFadeOut = {
-        transition: 'opacity 5s ease',
-        backgroundImage: 'url(/assets/images/entrance/Entrance_Photo.png)',
-        zIndex: 5,
-        position: 'absolute',
-        opacity: 1
-    }
+    
 
     const sidebarParagraphs = [
         'The Pussy Palace was a series of radical sex parties for queer women and trans people in Toronto. Established in 1998 by the Toronto Women’s Bathhouse Committee (TWBC), and running for just over a decade, the majority of Palace events were hosted at Club Toronto — a working-class, gay men’s bathhouse sheltered inside a converted, four-story, Victorian mansion at the corner of Mutual St. and Carlton St., near Toronto’s “gay” village.',  
@@ -21,19 +16,18 @@ const Explore = () => {
         'Among the Palace’s four floors, there are nine locations to visit. Explore locations in any order — whatever tickles your fancy. Each location showcases 3-6 audio soundbites, with an average duration of 1-3 minutes.',
         'Enjoy!' 
     ];
-
     
-    /*
+    
     useEffect(() => {
         // Position the cover photo properly over the background image, then fade out
+        /*
         const photoFader = document.getElementById('photo');
-        const entranceRoom = document.getElementById('entrance');
         photoFader.style.top = `${document.querySelector('.room-buffer').offsetHeight}px`;
         photoFader.style.opacity = 0;
         setTimeout(() => {
             photoFader.style.display = 'none';
-        }, 5000)
-    })*/
+        }, 5000)*/
+    })
     
     return (
         <div className='room-wrapper'>
@@ -48,7 +42,11 @@ const Explore = () => {
                     id='entrance' 
                     style={{backgroundImage: 'url(/assets/images/entrance/Entrance_Hero.png)'}}
                     objects={[
-                        {component: <EntranceDoor/>, id:'entrance-door'}
+                        {component: <EntranceDoor />, id: 'entrance-door'}
+                    ]}
+                    decorations={[
+                        {component: <EntranceOverlay />, id: 'entrance-overlay'},
+                        {component: <EntranceAssets />, id: 'entrance-assets'}
                     ]}
                     ambient='/assets/audio/Entrance_Ambient_Sound.mp3'
                 />

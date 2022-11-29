@@ -22,18 +22,13 @@
   position: relative;
 }
 
-.entrance-overlay {
-  width: 2800px;
-  min-width: 934px;
-  height: 2160px;
-  min-height: 720px;
-  background-size: 100% 100%;
-  position: absolute;
-  background-color: red;
-  transition: opacity 5s ease;
-  z-index: 5;
-  position: absolute;
+#entrance-overlay {
   opacity: 1;
+  transition: opacity 5s ease;
+  background-image: url('../../public/assets/images/entrance/Entrance_Photo.png');
+  height: stretch !important;
+  background-size: 100% 100%;
+  z-index: 5;
 }
 
 .room-buffer {
@@ -42,10 +37,20 @@
 
 .room-object {
   position: absolute;
+  z-index: 3;
+}
+
+.room-decoration {
+  position: absolute;
   z-index: 2;
 }
 
 div.room-object > svg {
+  height: 100%;
+  width: 100%;
+}
+
+div.room-decoration > svg {
   height: 100%;
   width: 100%;
 }
@@ -69,6 +74,7 @@ svg.clickable:hover {
   bottom: 0px;
   margin-right: 16px;
   margin-bottom: 16px;
+  z-index: 4;
 }
 
 .ambient-audio-player:hover {
@@ -128,6 +134,15 @@ svg.clickable:hover {
 /* ----- 00 - Entrance ----- */
 #entrance-assets {
   bottom: 0;
+  height: auto;
+  width: stretch;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#entrance-assets > svg {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 #entrance-door {
@@ -137,37 +152,37 @@ svg.clickable:hover {
   left: 52.5%;
 }
 
-  /* ----- RESIZE ROOM BASED ON SCREEN SIZE ----- */
-  @media screen and (min-width: 0px) {
-    .room, .entrance-overlay {
-        width: 934px;
-        height: 720px;
-    }
+/* ----- RESIZE ROOM BASED ON SCREEN SIZE ----- */
+@media screen and (min-width: 0px) {
+  .room, #entrance-overlay {
+      width: 934px;
+      height: 720px;
   }
+}
 
   @media screen and (min-width: 1366px) {
-    .room, .entrance-overlay {
+    .room, #entrance-overlay {
         width: 997px;
         height: 788px;
     }
   }
 
   @media screen and (min-width: 1440px) {
-    .room, .entrance-overlay {
+    .room, #entrance-overlay {
         width: 1051px;
         height: 900px;
     }
   }
 
   @media screen and (min-width: 1536px) {
-    .room, .entrance-overlay {
+    .room, #entrance-overlay {
         width: 1141px;
         height: 864px;
     }
   }
 
   @media screen and (min-width: 1920px) {
-    .room, .entrance-overlay {
+    .room, #entrance-overlay {
         width: 1402px;
         height: 1080px;
     }
