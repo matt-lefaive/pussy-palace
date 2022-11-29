@@ -40,6 +40,7 @@ const Explore = () => {
             <ExploreSidebar
                 title='Explore the Palace'
                 descriptions={sidebarParagraphs}
+                isEntrance={true}
             />
             <div className='room-container'>
                 <div className='room-buffer'></div>
@@ -49,6 +50,7 @@ const Explore = () => {
                     objects={[
                         {component: <EntranceDoor/>, id:'entrance-door'}
                     ]}
+                    ambient='/assets/audio/Entrance_Ambient_Sound.mp3'
                 />
                 <div className='room-buffer'></div>
             </div>

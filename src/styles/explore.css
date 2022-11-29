@@ -5,8 +5,6 @@
     align-items: stretch;
 }
 
-
-
 .room-container {
   display: flex;
   flex-flow: column;
@@ -50,22 +48,35 @@
 div.room-object > svg {
   height: 100%;
   width: 100%;
-  /*-webkit-filter: drop-shadow( 0px, 0px, 30px, white);
-  filter: drop-shadow( 0px, 0px, 30px, white);*/
 }
 
 .object-glow:hover {
   cursor: pointer;
 }
 
-svg:hover {
+svg.clickable:hover {
   filter:
     drop-shadow(0 0 10px #ff5c97) 
-    drop-shadow(0 0 10px #ff5c97) 
-    /* drop-shadow(-2px 2px 5px #ff5c97)  */
-    /* drop-shadow(2px -2px 5px #ff5c97)  */
-    /* drop-shadow(-2px -2px 10px #ff5c97) */
-    ;
+    drop-shadow(0 0 10px #ff5c97);
+}
+
+.ambient-audio-player {
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.ambient-audio-player:hover {
+  cursor: pointer;
+}
+
+.ambient-audio-player > i {
+  font-size: 36px;
 }
 
 
@@ -87,9 +98,34 @@ svg:hover {
   line-height: 36px;
 }
 
+.icon-row-flex-child {
+  flex-basis: calc(100% / 3);
+  text-align: center;
+  padding: 0 8px;
+  margin: 0 auto;
+  word-breaK: break-word;
+}
 
-  /* ----- ROOM SPECIFICS ----- */
-  /* ----- 00 - Entrance ----- */
+.duck-background {
+  background-image: url('../../public/assets/images/entrance/Icon_Glowing_Object_Fill.png');
+  background-size: 100% auto;
+  position: relative;
+}
+
+.duck-icon-bounder {
+  left: 0;
+  padding-top: 11%;
+  height: 90%;
+}
+
+.duck-icon-bounder > svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ----- ROOM SPECIFICS ----- */
+/* ----- 00 - Entrance ----- */
 #entrance-assets {
   bottom: 0;
 }

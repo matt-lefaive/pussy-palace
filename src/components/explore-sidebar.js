@@ -1,6 +1,7 @@
 import React from 'react';
+import ExploreIconRow from './explore-icon-row';
 
-const ExploreSidebar = ({ title, descriptions, hasHomeButton }) => {
+const ExploreSidebar = ({ title, descriptions, isEntrance }) => {
     return (
         <div className='explore-sidebar'>
             <div className='explore-sidebar-title'>
@@ -9,6 +10,7 @@ const ExploreSidebar = ({ title, descriptions, hasHomeButton }) => {
             <div className='explore-sidebar-descriptions'>
                 {descriptions.map((desc, i) => <p key={i}>{desc}</p>)}
             </div>
+            {isEntrance && <ExploreIconRow />}
         </div>
     )
 }

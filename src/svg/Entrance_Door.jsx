@@ -4,7 +4,6 @@ const EntranceDoor = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsVectornator="http://vectornator.io"
       width="297.64"
       height="491.117"
       fillRule="nonzero"
@@ -15,8 +14,9 @@ const EntranceDoor = () => {
       version="1.1"
       viewBox="0 0 297.64 491.117"
       xmlSpace="preserve"
+      className='clickable'
     >
-      <g transform="translate(-1482.08 -1621.193)" vectornatorLayerName="Door">
+      <g transform="translate(-1482.08 -1621.193)">
       <path
           fill="rgba(0,0,0,0)"
           stroke="#ff5c97"
