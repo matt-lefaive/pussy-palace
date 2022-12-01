@@ -1,4 +1,3 @@
-
 /* ----- ROOM STYLING (GENERAL) ----- */
 .room-wrapper {
     display: flex;
@@ -9,7 +8,6 @@
   display: flex;
   flex-flow: column;
   -ms-flex-flow: column;
-  height: 100vh;
 }
 
 .room {
@@ -48,11 +46,13 @@
 div.room-object > svg {
   height: 100%;
   width: 100%;
+  position: absolute
 }
 
 div.room-decoration > svg {
   height: 100%;
   width: 100%;
+  position: absolute
 }
 
 .object-glow:hover {
@@ -89,19 +89,25 @@ svg.clickable:hover {
 /* ----- SIDEBAR STYLING ----- */
 .explore-sidebar {
   box-sizing: border-box;
+  flex: 1 0 336px;
   height: 100vh;
-  overflow-y: auto;
-  flex-shrink: 0;
-  position: relative;
-  flex: 1;
-  min-width: 300px;
-  padding: 0px 32px 0px 32px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .explore-sidebar-title h1 {
   font-size: 35px;
   color: #FF5C97;
   line-height: 36px;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.explore-sidebar-descriptions {
+  padding: 0 24px;
 }
 
 .icon-row-flex-child {
@@ -130,6 +136,112 @@ svg.clickable:hover {
 }
 
 
+/* ----- SOUNDBITES  ----- */
+.soundbite {
+  flex-grow: 0;
+}
+
+.soundbite-buffer {
+  flex: 1;
+}
+
+.soundbite-title {
+  padding: 0 24px;
+  text-align: center;
+  color: #FF5C97;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0 !important;
+}
+
+.soundbite-subtitle {
+  padding: 0 24px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  color: white;
+  margin: 4px 0 24px 0 !important;
+}
+
+.soundbite-description {
+  padding: 0 24px;
+}
+
+.soundbite-player-container {
+  display: flex;
+  background-color: black;
+  border-top: 1px solid white;
+  height: 120px;
+  text-align: center;
+  align-items: center;
+}
+
+.play-pause-button-wrapper {
+  margin-left: 24px;
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: table;
+}
+
+.play-pause-button-wrapper:hover,
+.transcript-button-wrapper:hover,
+.cc-button-wrapper:hover {
+  cursor: pointer;
+}
+
+.play-pause-button-wrapper > div,
+.transcript-button-wrapper > div,
+.cc-button-wrapper > div {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.soundbite-progress-wrapper {
+  flex-grow: 1;
+  padding-top: 19px;
+}
+
+.transcript-button-wrapper {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.cc-button-wrapper {
+  margin-right: 24px;
+  display: table;
+}
+
+.soundbite-scrubber {
+  display: flex;
+}
+
+.soundbite-scrubber-knob {
+  height: 24px;
+  width: 24px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+
+.soundbite-scrubber-knob:hover {
+  cursor: pointer;
+}
+
+.timestamp-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timestamp-container > div {
+  font-size: 16px;
+}
+
 /* ----- ROOM SPECIFICS ----- */
 /* ----- 00 - Entrance ----- */
 #entrance-assets {
@@ -152,38 +264,87 @@ svg.clickable:hover {
   left: 52.5%;
 }
 
+/* ----- 01 - Threshold ----- */
+#threshold-assets {
+  height: 83.5%;
+  width: 80%;
+  bottom: 0;
+  right: 0;
+}
+
+#threshold-gallant-outline {
+  bottom: 0;
+  height: 83.5%;
+  width: 20%;
+  left: 19.8%;
+}
+
+#threshold-miklos-outline {
+  top: 31.5%;
+  left: 42%;
+  height: 45.5%;
+  width: 14%;
+}
+
+#threshold-hamilton-outline {
+  top: 30%;
+  left: 57.5%;
+  height: 16%;
+  width: 11%;
+}
+
 /* ----- RESIZE ROOM BASED ON SCREEN SIZE ----- */
 @media screen and (min-width: 0px) {
   .room, #entrance-overlay {
-      width: 934px;
+      width: 933px;
+      min-width: 933px;
+      max-width: 933px;
       height: 720px;
+      min-height: 720px;
+      max-height: 720px;
   }
 }
 
-  @media screen and (min-width: 1366px) {
-    .room, #entrance-overlay {
-        width: 997px;
-        height: 788px;
-    }
+@media screen and (min-width: 1366px) {
+  .room, #entrance-overlay {
+      width: 1021px;
+      min-width: 1021px;
+      max-width: 1021px;
+      height: 788px;
+      min-height: 788px;
+      max-height: 788px;
   }
+}
 
-  @media screen and (min-width: 1440px) {
-    .room, #entrance-overlay {
-        width: 1051px;
-        height: 900px;
-    }
+@media screen and (min-width: 1440px) {
+  .room, #entrance-overlay {
+      width: 1166px;
+      min-width: 1166px;
+      max-width: 1166px;
+      height: 900px;
+      min-height: 900px;
+      max-height: 900px;
   }
+}
 
-  @media screen and (min-width: 1536px) {
-    .room, #entrance-overlay {
-        width: 1141px;
-        height: 864px;
-    }
+@media screen and (min-width: 1536px) {
+  .room, #entrance-overlay {
+      width: 1120px;
+      min-width: 1120px;
+      max-width: 1120px;
+      height: 864px;
+      min-height: 864px;
+      max-height: 864px;
   }
+}
 
-  @media screen and (min-width: 1920px) {
-    .room, #entrance-overlay {
-        width: 1402px;
-        height: 1080px;
-    }
+@media screen and (min-width: 1920px) {
+  .room, #entrance-overlay {
+      width: 1400px;
+      min-width: 1400px;
+      max-width: 1400px;
+      height: 1080px;
+      min-height: 1080px;
+      max-height: 1080px;
   }
+}

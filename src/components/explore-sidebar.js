@@ -1,7 +1,10 @@
 import React from 'react';
 import ExploreIconRow from './explore-icon-row';
+import Soundbite from './soundbite';
 
-const ExploreSidebar = ({ title, descriptions, isEntrance }) => {
+
+const ExploreSidebar = ({ title, descriptions, soundbite, isEntrance }) => {
+    
     return (
         <div className='explore-sidebar'>
             <div className='explore-sidebar-title'>
@@ -11,6 +14,17 @@ const ExploreSidebar = ({ title, descriptions, isEntrance }) => {
                 {descriptions.map((desc, i) => <p key={i}>{desc}</p>)}
             </div>
             {isEntrance && <ExploreIconRow />}
+            <div className='soundbite-buffer'></div>
+            {soundbite &&
+                <Soundbite 
+                    title={soundbite.title}
+                    subtitle={soundbite.subtitle}
+                    description={soundbite.description}
+                    src={soundbite.src}
+                    narrators={soundbite.narrators}
+                    narratorTimings={soundbite.narratorTimings}
+                />
+            }
         </div>
     )
 }
