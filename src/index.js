@@ -19,6 +19,7 @@ import Explore from './pages/explore';
 import Credits from './pages/credits';
 import After from './pages/after';
 
+import Threshold from './rooms/threshold';
 import Pool from './rooms/pool';
 
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: 'explore',
     element: <Explore />
+  },
+  {
+    path: 'explore/threshold',
+    element: <Threshold />
   },
   {
     path: 'explore/pool',

@@ -3,7 +3,7 @@ import ExploreIconRow from './explore-icon-row';
 import Soundbite from './soundbite';
 
 
-const ExploreSidebar = ({ title, descriptions, soundbite, isEntrance }) => {
+const ExploreSidebar = ({ title, descriptions, soundbite, autoplay, isEntrance }) => {
     
     return (
         <div className='explore-sidebar'>
@@ -23,6 +23,7 @@ const ExploreSidebar = ({ title, descriptions, soundbite, isEntrance }) => {
                     src={soundbite.src}
                     narrators={soundbite.narrators}
                     narratorTimings={soundbite.narratorTimings}
+                    autoplay={autoplay}
                 />
             }
         </div>
