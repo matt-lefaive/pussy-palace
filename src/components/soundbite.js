@@ -1,8 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import SoundbitePlayer from './soundbite-player';
-import ReactAudioPlayer from 'react-audio-player';
 
-const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimings, startPlaying }) => {
+const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimings, autoplay }) => {
+    const [narratorHeadshotIndex, setNarratorHeadshotIndex] = useState(0);
+    const [narratorHeadshot, setNarratorHeadshot] = useState(narrators[narratorHeadshotIndex]);
+
+    const updateHeadshot = timestamp => {
+        if (narratorTimings.length > 1) {
+            // Find last timing that is less than current timestamp
+            let i = narratorTimings.length - 1;
+            for (i; i >= 0; i--) {
+                if (narratorTimings[i] < timestamp) {
+                    break;
+                }
+            }
+            if (narratorHeadshotIndex !== i) setNarratorHeadshotIndex(i);
+        }
+    }
+
+    useEffect(() => {
+        setNarratorHeadshot(narrators[narratorHeadshotIndex]);
+    }, [narratorHeadshotIndex]);
 
     return (
         <div className='soundbite'>
@@ -10,9 +28,12 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
             <h3 className='soundbite-subtitle'>{subtitle}</h3>
             <div className='soundbite-description'>{description}</div>
             <div className='soundbite-narrator'>
-                <img />
+                {narratorHeadshot && <img src={require(`../../public/assets/images/headshots/${narratorHeadshot}.png`)} alt=''/>}
             </div>
-            <SoundbitePlayer src={src}/>
+            <SoundbitePlayer 
+                src={src} 
+                autoplay={autoplay} 
+                updateHeadshot={updateHeadshot}/>
         </div>
     )
 }

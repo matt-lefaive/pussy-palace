@@ -6,7 +6,7 @@ import PauseIcon from '../svg/pause-icon';
 import TranscriptIcon from '../svg/transcript-icon';
 import CCIcon from '../svg/cc-icon';
 
-const SoundbitePlayer = ({ src, autoplay }) => {
+const SoundbitePlayer = ({ src, autoplay, updateHeadshot }) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [percentPlayed, setPercentPlayed] = useState(0);
     const [currentTime, setCurrentTime] = useState(0);
@@ -44,17 +44,20 @@ const SoundbitePlayer = ({ src, autoplay }) => {
         setIsPlaying(!isPlaying);
     }
 
-    const updatePercent = () => {
+    const audioPlayerOnListen = () => {
         const audioPlayer = document.getElementById('audio-player');
         setCurrentTime(audioPlayer.currentTime);
-        setPercentPlayed((audioPlayer.currentTime / audioPlayer.duration) * 100)
+        setPercentPlayed((audioPlayer.currentTime / audioPlayer.duration) * 100);
+        updateHeadshot(audioPlayer.currentTime);
     }
 
     const getPercentFromScrubberClick = p => {
         const audioPlayer = document.getElementById('audio-player')
         setPercentPlayed(p);
-        setCurrentTime(audioPlayer.duration * p / 100);
-        setMediaFragment(`#t=${audioPlayer.duration * p / 100}`);
+        const seconds = audioPlayer.duration * p / 100;
+        setCurrentTime(seconds);
+        updateHeadshot(seconds);
+        setMediaFragment(`#t=${seconds}`);
     }
     
     return (
@@ -62,9 +65,9 @@ const SoundbitePlayer = ({ src, autoplay }) => {
             <ReactAudioPlayer 
                 id='audio-player' 
                 src={`${src}${mediaFragment}`} 
-                onListen={updatePercent}
+                onListen={audioPlayerOnListen}
                 listenInterval={500}
-                autoPlay={autoplay}
+                autoPlay={false}
                 preload='auto'
                 onCanPlayThrough={displayTotalTime}
             />
@@ -79,7 +82,10 @@ const SoundbitePlayer = ({ src, autoplay }) => {
                     </div>
                 </div>
                 <div className='soundbite-progress-wrapper'>
-                    <SoundbiteScrubber percent={percentPlayed} updateParent={getPercentFromScrubberClick}/>
+                    <SoundbiteScrubber 
+                        percent={percentPlayed} 
+                        updateParent={getPercentFromScrubberClick} 
+                    />
                     <div className='timestamp-container'>
                         <div className='current-time'>
                             {getAudioTimestamp(currentTime)}

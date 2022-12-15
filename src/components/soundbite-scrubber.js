@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SoundbiteScrubber = ({ percent, updateParent }) => {
+const SoundbiteScrubber = ({ percent, updateParent, onScrub }) => {
     const BAR_HEIGHT = 8;
     const KNOB_HEIGHT = 24;
     
