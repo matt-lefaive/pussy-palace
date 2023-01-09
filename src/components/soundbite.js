@@ -20,7 +20,7 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
 
     useEffect(() => {
         setNarratorHeadshot(narrators[narratorHeadshotIndex]);
-    }, [narratorHeadshotIndex]);
+    }, [narratorHeadshotIndex, narrators]);
 
     return (
         <div className='soundbite'>
@@ -28,7 +28,7 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
             <h3 className='soundbite-subtitle'>{subtitle}</h3>
             <div className='soundbite-description'>{description}</div>
             <div className='soundbite-narrator'>
-                {narratorHeadshot && <img src={require(`../../public/assets/images/headshots/${narratorHeadshot}.png`)} alt=''/>}
+                <img src={require(`../../public/assets/images/headshots/${narratorHeadshot}.png`)} alt=''/>
             </div>
             <SoundbitePlayer 
                 src={src} 

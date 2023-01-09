@@ -44,6 +44,15 @@ const SoundbitePlayer = ({ src, autoplay, updateHeadshot }) => {
         setIsPlaying(!isPlaying);
     }
 
+    const handleTranscriptIconClick = () => {
+        const transcriptionContainer = document.getElementById('transcription-container');
+        if (transcriptionContainer.classList.contains('hidden')) {
+            transcriptionContainer.className = 'transcription-container'
+        } else {
+            transcriptionContainer.className = 'transcription-container hidden';
+        }
+    }
+
     const audioPlayerOnListen = () => {
         const audioPlayer = document.getElementById('audio-player');
         setCurrentTime(audioPlayer.currentTime);
@@ -97,7 +106,7 @@ const SoundbitePlayer = ({ src, autoplay, updateHeadshot }) => {
                 </div>
                 <div className='transcript-button-wrapper'>
                     <div>
-                        <TranscriptIcon />
+                        <TranscriptIcon onClick={handleTranscriptIconClick}/>
                     </div>
                 </div>
                 <div className='cc-button-wrapper'>
@@ -106,8 +115,6 @@ const SoundbitePlayer = ({ src, autoplay, updateHeadshot }) => {
                     </div>
                 </div>
             </div>
-
-            
         </>
     )
 }

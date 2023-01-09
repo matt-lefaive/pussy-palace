@@ -136,6 +136,39 @@ svg.clickable:hover {
   height: 100%;
 }
 
+/* ----- TRANSCRIPTIONS ----- */
+.transcription-container {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  overflow-y: auto;
+  width: 60%;
+  max-height: 60%;
+  border: 1px solid white;
+  z-index: 10;
+  background-color: black;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.close-button-wrapper i {
+  font-size: 24px;
+}
+
+.close-button-wrapper i:hover {
+  cursor: pointer;
+}
+
+#citation-title {
+  padding: 4px 12px 0 0;
+  margin-top: 16px;
+  border-top: 1px solid white;
+  display: inline-block;
+}
 
 /* ----- SOUNDBITES  ----- */
 .soundbite {
@@ -170,6 +203,7 @@ svg.clickable:hover {
 
 .soundbite-narrator {
   width: 100%;
+  max-width: 400px;
 }
 
 .soundbite-narrator img {

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TranscriptIcon = ({ color }) => {
+const TranscriptIcon = ({ color, onClick }) => {
     const style = color ? {color} : {};
-    return <i style={style} className='fa-regular fa-file-lines'></i>;
+    return <i onClick={onClick} style={style} className='fa-regular fa-file-lines'></i>;
 }
 
 export default TranscriptIcon;
