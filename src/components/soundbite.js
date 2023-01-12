@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SoundbitePlayer from './soundbite-player';
 
-const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimings, autoplay }) => {
+const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimings, autoplay, updateParentTimestamp }) => {
     const [narratorHeadshotIndex, setNarratorHeadshotIndex] = useState(0);
     const [narratorHeadshot, setNarratorHeadshot] = useState(narrators[narratorHeadshotIndex]);
 
@@ -33,7 +33,8 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
             <SoundbitePlayer 
                 src={src} 
                 autoplay={autoplay} 
-                updateHeadshot={updateHeadshot}/>
+                updateHeadshot={updateHeadshot}
+                updateParentTimestamp={updateParentTimestamp}/>
         </div>
     )
 }

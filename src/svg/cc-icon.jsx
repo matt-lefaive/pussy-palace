@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CCIcon = ({ color }) => {
+const CCIcon = ({ color, onClick }) => {
     const style = color ? {color} : {};
-    return <i style={style} className='fa-regular fa-closed-captioning'></i>;
+    return <i style={style} onClick={onClick} className='fa-regular fa-closed-captioning'></i>;
 }
 
 export default CCIcon;

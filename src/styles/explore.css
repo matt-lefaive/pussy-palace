@@ -170,6 +170,21 @@ svg.clickable:hover {
   display: inline-block;
 }
 
+/* ----- VTT Viewer/Closed Captions ----- */
+.vtt-viewer {
+  position: fixed;
+  right: 10vh;
+  bottom: 10vh;
+  width: 100vh;
+  max-height: 10%;
+  border: 1px solid white;
+  z-index: 200;
+  background-color: black;
+  border-radius: 5px;
+  padding: 16px;
+  white-space: pre-wrap;
+}
+
 /* ----- SOUNDBITES  ----- */
 .soundbite {
   flex-grow: 0;
@@ -218,6 +233,7 @@ svg.clickable:hover {
   height: 120px;
   text-align: center;
   align-items: center;
+  padding-bottom: 16px;
 }
 
 .play-pause-button-wrapper {

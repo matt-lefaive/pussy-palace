@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import ExploreIconRow from './explore-icon-row';
 import Soundbite from './soundbite';
 
-const ExploreSidebar = ({ title, descriptions, soundbite, autoplay, isEntrance }) => {
+const ExploreSidebar = ({ title, descriptions, soundbite, autoplay, isEntrance, updateParentTimestamp }) => {
     
     return (
         <div className='explore-sidebar'>
@@ -23,6 +23,7 @@ const ExploreSidebar = ({ title, descriptions, soundbite, autoplay, isEntrance }
                     narrators={soundbite.narrators}
                     narratorTimings={soundbite.narratorTimings}
                     autoplay={autoplay}
+                    updateParentTimestamp={updateParentTimestamp}
                 />
             }
         </div>

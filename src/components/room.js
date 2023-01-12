@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import AmbientAudioPlayer from './ambient-audio-player';
 import Transcription from './transcription';
 
+
 const Room = ({ id, style, objects, decorations, ambient, soundbite }) => {
+
     return (
         <div 
             id={id} 
