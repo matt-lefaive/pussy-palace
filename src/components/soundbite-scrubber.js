@@ -1,9 +1,10 @@
 import React from 'react';
 
-const SoundbiteScrubber = ({ percent, updateParent, onScrub }) => {
+const SoundbiteScrubber = ({ percent, updateParent }) => {
     const BAR_HEIGHT = 8;
-    const KNOB_HEIGHT = 24;
-    
+    const KNOB_HEIGHT = 12;
+    const KNOB_WIDTH = 2;
+  
     const left = {
         backgroundColor: '#FF5C97',
         height: BAR_HEIGHT,
@@ -26,7 +27,6 @@ const SoundbiteScrubber = ({ percent, updateParent, onScrub }) => {
         const bar = document.getElementById('soundbite-scrubber');
         const relativePosition = e.clientX - bar.getBoundingClientRect().left;
         const totalWidth = getBarWidth();
-        //setPercentage((relativePosition / totalWidth) * 100);
         updateParent((relativePosition / totalWidth) * 100);
     }
 
@@ -44,12 +44,12 @@ const SoundbiteScrubber = ({ percent, updateParent, onScrub }) => {
             <div 
                 id='soundbite-scrubber-knob'
                 className='soundbite-scrubber-knob' 
-                style={{left: `calc(${percent}% - ${KNOB_HEIGHT / 2}px)`}}
+                style={{left: `calc(${percent}% - ${KNOB_WIDTH / 2}px)`}}
                 draggable='true'>
             </div>
             <div id='soundbite-scrubber' className='soundbite-scrubber'>
-                <div style={left}/>
-                <div style={right}/>
+                <div id='scrubber-left' style={left}/>
+                <div id='srubber-right' style={right}/>
             </div>
         </div>
         

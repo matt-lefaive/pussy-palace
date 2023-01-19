@@ -5,7 +5,6 @@ import PlayIcon from '../svg/play-icon';
 import PauseIcon from '../svg/pause-icon';
 import TranscriptIcon from '../svg/transcript-icon';
 import CCIcon from '../svg/cc-icon';
-import VTTViewer from './vtt-viewer';
 
 const SoundbitePlayer = ({ src, autoplay, updateHeadshot, updateParentTimestamp }) => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -18,10 +17,23 @@ const SoundbitePlayer = ({ src, autoplay, updateHeadshot, updateParentTimestamp 
         if (isPlaying) {
             document.getElementById('audio-player')
                 .play()
-                .then(setIsPlaying(true))
+                .then()
                 .catch(err => setIsPlaying(false));
+        } else {
+            setIsPlaying(false);
         }
-    }, [isPlaying, mediaFragment])
+    }, [isPlaying, mediaFragment]);
+
+    // When a new soundbite is clicked, reset the player (detected on source change)
+    useEffect(() => {
+        setIsPlaying(false);
+        setPercentPlayed(0);
+        setCurrentTime(0);
+        setTotalTime(1);
+        setMediaFragment('');
+        updateHeadshot(0);
+        //if (autoplay) setIsPlaying(true);
+    }, [src])
 
     const getAudioTimestamp = sec => {
         sec = Math.round(sec);
@@ -47,19 +59,25 @@ const SoundbitePlayer = ({ src, autoplay, updateHeadshot, updateParentTimestamp 
 
     const handleTranscriptIconClick = () => {
         const transcriptionContainer = document.getElementById('transcription-container');
+        const transcriptIcon = document.getElementById('transcript-icon');
         if (transcriptionContainer.classList.contains('hidden')) {
             transcriptionContainer.className = 'transcription-container';
+            transcriptIcon.style.color = '#FF5C97';
         } else {
             transcriptionContainer.className = 'transcription-container hidden';
+            transcriptIcon.style.color = 'white';
         }
     }
 
     const handleCCIconClick = () => {
         const captionContainer = document.getElementById('vtt-viewer');
+        const ccIcon = document.getElementById('cc-icon');
         if (captionContainer.classList.contains('hidden')) {
             captionContainer.className = 'vtt-viewer';
+            ccIcon.style.color = '#FF5C97';
         } else {
             captionContainer.className = 'vtt-viewer hidden';
+            ccIcon.style.color = 'white';
         }
     }
 
@@ -87,7 +105,7 @@ const SoundbitePlayer = ({ src, autoplay, updateHeadshot, updateParentTimestamp 
                 id='audio-player' 
                 src={`${src}${mediaFragment}`} 
                 onListen={audioPlayerOnListen}
-                listenInterval={500}
+                listenInterval={100}
                 autoPlay={false}
                 preload='auto'
                 onCanPlayThrough={displayTotalTime}
@@ -118,12 +136,12 @@ const SoundbitePlayer = ({ src, autoplay, updateHeadshot, updateParentTimestamp 
                 </div>
                 <div className='transcript-button-wrapper'>
                     <div>
-                        <TranscriptIcon onClick={handleTranscriptIconClick}/>
+                        <TranscriptIcon id='transcript-icon' onClick={handleTranscriptIconClick}/>
                     </div>
                 </div>
                 <div className='cc-button-wrapper'>
                     <div>
-                        <CCIcon onClick={handleCCIconClick}/>
+                        <CCIcon id='cc-icon' onClick={handleCCIconClick}/>
                     </div>
                 </div>
             </div>
