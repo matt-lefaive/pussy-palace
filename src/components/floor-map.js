@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FloorMap = () => {
+const FloorMap = ({ room }) => {
     return (
         <div id='floor-map' className='floor-map hidden'>
             MAP TEST

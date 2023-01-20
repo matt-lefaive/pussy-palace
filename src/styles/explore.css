@@ -1,13 +1,14 @@
 /* ----- ROOM STYLING (GENERAL) ----- */
 .room-wrapper {
-    display: flex;
-    align-items: stretch;
+  display: flex;
+  align-items: stretch;
 }
 
 .room-container {
   display: flex;
   flex-flow: column;
   -ms-flex-flow: column;
+  overflow-y: auto;
 }
 
 .room {
@@ -46,13 +47,13 @@
 div.room-object > svg {
   height: 100%;
   width: 100%;
-  position: absolute
+  position: absolute;
 }
 
 div.room-decoration > svg {
   height: 100%;
   width: 100%;
-  position: absolute
+  position: absolute;
 }
 
 .object-glow:hover {
@@ -87,7 +88,6 @@ svg.clickable:hover {
 
 /* ----- NAVIGATION PANEL ----- */
 .navigation-panel {
-  border: 1px red;
   display: flex;
   margin: 24px 24px 0 24px;
 }
@@ -381,6 +381,7 @@ svg.clickable:hover {
   width: 11.6%;
   bottom: 2.3%;
   left: 52.5%;
+  z-index: 20;
 }
 
 /* ----- 01 - Threshold ----- */

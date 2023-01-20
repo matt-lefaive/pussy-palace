@@ -3,7 +3,10 @@ import CloseIcon from '../svg/close-icon';
 
 const Transcription = ({ text, citation }) => {
     
-    const onClickCloseTranscript = () => document.getElementById('transcription-container').className = 'transcription-container hidden';
+    const onClickCloseTranscript = () => {
+        document.getElementById('transcription-container').className = 'transcription-container hidden';
+        document.getElementById('transcript-icon').style.color = 'white';
+    }
     
     return (
         <div id='transcription-container' className='transcription-container hidden'>
