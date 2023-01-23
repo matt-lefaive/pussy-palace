@@ -278,6 +278,12 @@ svg.clickable:hover {
   margin: 0 auto;
 }
 
+.narrator-name-title {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
 .soundbite-narrator img {
   width: 100%;
   vertical-align: bottom;

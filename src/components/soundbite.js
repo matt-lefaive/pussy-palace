@@ -1,10 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import SoundbitePlayer from './soundbite-player';
+import BrushwoodRoseNameTitle from '../svg/BrushwoodRose_Name+Title';
+import CampbellSmithNameTitle from '../svg/CampbellSmith_Name+Title';
+import ChanNameTitle from '../svg/Chan_Name+Title';
+import GallantNameTitle from '../svg/Gallant_Name+Title';
+import HamiltonNameTitle from '../svg/Hamilton_Name+Title';
+import HornickNameTitle from '../svg/Hornick_Name+Title';
+import JansenNameTitle from '../svg/Jansen_Name+Title';
+import MalletteNameTitle from '../svg/Mallette_Name+Title';
+import McGregorNameTitle from '../svg/McGregor_Name+Title';
+import MiklosNameTitle from '../svg/Miklos_Name+Title';
+import OlenderNameTitle from '../svg/Olender_Name+Title';
+import RacineNameTitle from '../svg/Racine_Name+Title';
+import RidgleyNameTitle from '../svg/Ridgley_Name+Title';
+import RoweNameTitle from '../svg/Rowe_Name+Title';
+import SinghNameTitle from '../svg/Singh_Name+Title';
+import VogelsNameTitle from '../svg/Vogels_Name+Title';
 
 const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimings, autoplay, updateParentTimestamp }) => {
     const [narratorHeadshotIndex, setNarratorHeadshotIndex] = useState(0);
     const [narratorHeadshot, setNarratorHeadshot] = useState(narrators[narratorHeadshotIndex]);
-    const [newlySelected, setNewlySelected] = useState(true);
 
     const updateHeadshot = timestamp => {
         if (narratorTimings.length > 1) {
@@ -15,6 +30,7 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
                     break;
                 }
             }
+            if (i === -1) i = 0;
             if (narratorHeadshotIndex !== i) setNarratorHeadshotIndex(i);
         }
     }
@@ -37,6 +53,24 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
             <h3 className='soundbite-subtitle'>{subtitle}</h3>
             <div className='soundbite-description'>{description}</div>
             <div className='soundbite-narrator'>
+                <div className='narrator-name-title'>
+                    {narratorHeadshot === 'BrushwoodRose' && <BrushwoodRoseNameTitle />}
+                    {narratorHeadshot === 'CampbellSmith' && <CampbellSmithNameTitle />}
+                    {narratorHeadshot === 'Chan' && <ChanNameTitle />}
+                    {narratorHeadshot === 'Gallant' && <GallantNameTitle />}
+                    {narratorHeadshot === 'Hamilton' && <HamiltonNameTitle />}
+                    {narratorHeadshot === 'Hornick' && <HornickNameTitle />}
+                    {narratorHeadshot === 'Jansen' && <JansenNameTitle />}
+                    {narratorHeadshot === 'Mallette' && <MalletteNameTitle />}
+                    {narratorHeadshot === 'McGregor' && <McGregorNameTitle />}
+                    {narratorHeadshot === 'Miklos' && <MiklosNameTitle />}
+                    {narratorHeadshot === 'Olender' && <OlenderNameTitle />}
+                    {narratorHeadshot === 'Racine' && <RacineNameTitle />}
+                    {narratorHeadshot === 'Ridgley' && <RidgleyNameTitle />}
+                    {narratorHeadshot === 'Rowe' && <RoweNameTitle />}
+                    {narratorHeadshot === 'Singh' && <SinghNameTitle />}
+                    {narratorHeadshot === 'Vogels' && <VogelsNameTitle />}
+                </div>
                 <img src={image()} alt=''/>
             </div>
             <SoundbitePlayer
