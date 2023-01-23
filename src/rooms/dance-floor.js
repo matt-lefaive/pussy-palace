@@ -14,7 +14,6 @@ const DanceFloor = () => {
     const [clickedSoundbiteID, setClickedSoundbiteID] = useState(null);
     const [currentSoundbiteID, setCurrentSoundbiteID] = useState(null);
     const [audioTimestamp, setAudioTimestamp] = useState(0);
-    const [newSoundbite, setNewSoundbite] = useState(false);
 
     const sidebarParagraphs = [
         'The buzzer sounds, the threshold door opens, and you’re thrust into a great sea of bodies in various states of dress and undress. People are dancing, chatting, drinking. Laughter, liquor, and the faint smell of chlorine overtake your senses. In the distance, the DJ spins a deep, throbbing bassline that seems to expand and contract the house in time with people’s enjoyment. Sex is in the air. You’re filled with nervous anticipation. You’re wondering if anyone’s looking at you. There’s no time to stop and linger though. You’ve arrived!'
@@ -80,10 +79,6 @@ const DanceFloor = () => {
     useEffect(() => {
         setCurrentSoundbiteID(clickedSoundbiteID ? clickedSoundbiteID : hoveredSoundbiteID)
     }, [clickedSoundbiteID, hoveredSoundbiteID])
-
-    useEffect(() => {
-        setNewSoundbite(true);
-    }, [clickedSoundbiteID]);
     
     const updateAudioTimestamp = timestamp => setAudioTimestamp(timestamp);
 

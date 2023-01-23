@@ -18,7 +18,8 @@ const DanceFloorMusicChlorineSexAlcoholOutline = () => {
     >
       <g transform="translate(-710.623 -789.9)">
         <path
-          fill="none"
+          className="object-glow"
+          fill="rgba(0,0,0,0)"
           stroke="#ff5c97"
           strokeLinecap="butt"
           strokeLinejoin="round"

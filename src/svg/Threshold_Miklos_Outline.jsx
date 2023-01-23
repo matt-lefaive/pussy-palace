@@ -20,6 +20,7 @@ const ThresholdMiklosOutline = () => {
         transform="translate(-1202.134 -689.382)"
       >
         <path
+          className="object-glow"
           fill="rgba(0,0,0,0)"
           stroke="#ff5c97"
           strokeLinecap="round"

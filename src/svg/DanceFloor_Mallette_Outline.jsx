@@ -24,7 +24,8 @@ const DanceFloorMalletteOutline = () => {
         transform="translate(-1500.415 -897.536)"
       >
         <path
-          fill="none"
+          className="object-glow"
+          fill="rgba(0,0,0,0)"
           stroke="#ff5c97"
           strokeLinecap="round"
           strokeLinejoin="round"

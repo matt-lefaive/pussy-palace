@@ -18,6 +18,7 @@ const ThresholdHamiltonOutline = () => {
     >
       <g transform="translate(-1621.5 -660.79)">
         <path
+          className="object-glow"
           fill="rgba(0,0,0,0)"
           stroke="#ff5c97"
           strokeLinecap="round"

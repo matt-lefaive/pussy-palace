@@ -24,7 +24,8 @@ const DanceFloorOlenderOutline = () => {
         transform="translate(0 -986.959)"
       >
         <path
-          fill="none"
+          className="object-glow"
+          fill="rgba(0,0,0,0)"
           stroke="#ff5c97"
           strokeLinecap="round"
           strokeLinejoin="round"
