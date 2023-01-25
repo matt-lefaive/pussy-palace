@@ -89,6 +89,7 @@ h3 {
 
 .sidemenu a:hover {
   text-decoration: underline;
+  color: white;
 }
 
 .sidemenu a.active {

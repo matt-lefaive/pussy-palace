@@ -41,7 +41,7 @@ const NavBar = ({ room }) => {
         <div className={'navigation-panel' + showNavBar} style={{width: navBarWidth}}>
             {prevRoom && <a className='previous-room-button' href={prevRoom.url}><LeftArrow /> {prevRoom.text}</a>}
             <div className='navigation-menu-buffer'></div>
-            <a className='home-button' href='/explore'>
+            <a className='home-button' href='/'>
                 <HomeIcon /> Home
             </a>
             <div className='map-button' onClick={floorMapOnClick}>
