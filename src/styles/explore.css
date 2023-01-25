@@ -13,10 +13,10 @@
 
 .room {
   overflow-y: auto;
-  width: 2800px;
-  min-width: 934px;
-  height: 2160px;
-  min-height: 720px;
+  /*width: 2800px;*/
+  /*min-width: 934px;*/
+  /*height: 2160px;*/
+  /*min-height: 720px;*/
   background-size: 100% 100%;
   position: relative;
 }
@@ -144,7 +144,7 @@ svg.clickable:hover {
 /* ----- SIDEBAR STYLING ----- */
 .explore-sidebar {
   box-sizing: border-box;
-  flex: 1 0 336px;
+  flex: 0 0 336px;
   height: 100vh;
   position: sticky;
   top: 0;
@@ -519,6 +519,7 @@ svg.clickable:hover {
 }
 
 /* ----- RESIZE ROOM BASED ON SCREEN SIZE ----- */
+/*
 @media screen and (min-width: 0px) {
   .room, #entrance-overlay {
       width: 933px;
@@ -572,4 +573,4 @@ svg.clickable:hover {
       min-height: 1080px;
       max-height: 1080px;
   }
-}
+}*/

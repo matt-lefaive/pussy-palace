@@ -6,6 +6,24 @@ import FloorMap from './floor-map';
 
 const Room = ({ id, style, objects, decorations, ambient, soundbite }) => {
 
+    const MIN_WIDTH = 800;
+
+    const resize = () => {
+        const roomDiv = document.getElementById(id);
+        const sidebarDiv = document.getElementById('explore-sidebar');
+        if (roomDiv && sidebarDiv) {
+            const width = Math.max(window.innerWidth - sidebarDiv.offsetWidth, MIN_WIDTH);
+            const height = (2160 / 2800) * width;
+            roomDiv.style.setProperty('width', `${width}px`);
+            roomDiv.style.setProperty('height', `${height}px`);
+        }
+    }
+
+    useEffect(() => {
+        resize();
+        window.addEventListener('resize', resize);
+    });
+    
     return (
         <div id={id} style={style} className='room'>
             <NavBar room={id}/>

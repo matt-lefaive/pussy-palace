@@ -5,7 +5,7 @@ import Soundbite from './soundbite';
 const ExploreSidebar = ({ title, descriptions, soundbite, autoplay, isEntrance, updateParentTimestamp }) => {
     
     return (
-        <div className='explore-sidebar'>
+        <div id='explore-sidebar' className='explore-sidebar'>
             <div className='explore-sidebar-title'>
                 <h1>{title}</h1>
             </div>
