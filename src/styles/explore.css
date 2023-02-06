@@ -518,6 +518,54 @@ svg.clickable:hover {
   left: 27.25%;
 }
 
+/* ----- 05 - Cat Walk ----- */
+#cat-walk-assets {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+#cat-walk-campbell-smith-outline {
+  width: 13.5%;
+  height: 33%;
+  left: 35.7%;
+  top: 52%;
+}
+
+#cat-walk-dutrizac-outline {
+  width: 6%;
+  height: 7.5%;
+  top: 0;
+  left: 58.9%;
+}
+
+#cat-walk-irwin-outline {
+  width: 17%;
+  height: 50%;
+  top: 47.8%;
+  left: 4.6%;
+}
+
+#cat-walk-mallette-outline {
+  width: 10.3%;
+  height: 25.5%;
+  left: 26.35%;
+  top: 11.8%;
+}
+
+#cat-walk-roberton-outline {
+  width: 15%;
+  height: 25.5%;
+  bottom: 12%;
+  right: 1.7%;
+}
+
+#cat-walk-tough-sweet-outline {
+  width: 40%;
+  height: 45%;
+  bottom: 0;
+  right: 15.1%;
+}
 /* ----- RESIZE ROOM BASED ON SCREEN SIZE ----- */
 /*
 @media screen and (min-width: 0px) {

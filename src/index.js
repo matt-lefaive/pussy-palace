@@ -23,6 +23,7 @@ import Threshold from './rooms/threshold';
 import DanceFloor from './rooms/dance-floor';
 import Pool from './rooms/pool';
 import Staircases from './rooms/staircases';
+import CatWalk from './rooms/cat-walk';
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
   {
     path: 'explore/staircases',
     element: <Staircases />
+  },
+  {
+    path: 'explore/cat-walk',
+    element: <CatWalk />
   },
   {
     path: 'credits',
