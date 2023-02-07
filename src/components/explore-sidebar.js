@@ -24,6 +24,7 @@ const ExploreSidebar = ({ title, descriptions, soundbite, autoplay, isEntrance, 
                     narratorTimings={soundbite.narratorTimings}
                     autoplay={autoplay}
                     updateParentTimestamp={updateParentTimestamp}
+                    explicit={soundbite.explicit}
                 />
             }
         </div>

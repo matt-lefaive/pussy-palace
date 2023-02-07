@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import SoundbitePlayer from './soundbite-player';
+
+import ExplicitIcon from '../svg/Icon_Explicit';
+
 import BeeverNameTitle from '../svg/Beever_Name+Title';
 import BrushwoodRoseNameTitle from '../svg/BrushwoodRose_Name+Title';
 import CampbellSmithNameTitle from '../svg/CampbellSmith_Name+Title';
@@ -21,8 +24,9 @@ import RoweNameTitle from '../svg/Rowe_Name+Title';
 import SinghNameTitle from '../svg/Singh_Name+Title';
 import VogelsNameTitle from '../svg/Vogels_Name+Title';
 import WoodwardNameTitle from '../svg/Woodward_Name+Title';
+import IconExplicit from '../svg/Icon_Explicit';
 
-const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimings, autoplay, updateParentTimestamp }) => {
+const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimings, autoplay, updateParentTimestamp, explicit }) => {
     const [narratorHeadshotIndex, setNarratorHeadshotIndex] = useState(0);
     const [narratorHeadshot, setNarratorHeadshot] = useState(narrators[narratorHeadshotIndex]);
 
@@ -55,7 +59,7 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
     return (
         <div className='soundbite'>
             <h2 className='soundbite-title'>{title}</h2>
-            <h3 className='soundbite-subtitle'>{subtitle}</h3>
+            <h3 className='soundbite-subtitle'>{explicit && <div className='soundbite-explicit'><ExplicitIcon /></div>} {subtitle}</h3>
             <div className='soundbite-description'>{description}</div>
             <div className='soundbite-narrator'>
                 <div className='narrator-name-title'>
