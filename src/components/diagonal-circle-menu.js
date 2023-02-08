@@ -30,7 +30,7 @@ const DiagonalCircleMenu = () => {
         setTargetLink([
             '/before',
             '/building',
-            '/explore',
+            '/explore/entrance',
             '/raid',
             '/after'
         ][activeCircle - 1]);

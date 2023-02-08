@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ExploreSidebar from '../components/explore-sidebar';
 import Room from '../components/room';
 import EntranceAssets from '../svg/Entrance_Assets';
 import EntranceDoor from '../svg/Entrance_Door';
 import EntranceOverlay from '../components/entrance-overlay';
 
-const Explore = () => {
+const Entrance = () => {
     
     const sidebarParagraphs = [
         'The Pussy Palace was a series of radical sex parties for queer women and trans people in Toronto. Established in 1998 by the Toronto Women’s Bathhouse Committee (TWBC), and running for just over a decade, the majority of Palace events were hosted at Club Toronto — a working-class, gay men’s bathhouse sheltered inside a converted, four-story, Victorian mansion at the corner of Mutual St. and Carlton St., near Toronto’s “gay” village.',  
@@ -43,4 +43,4 @@ const Explore = () => {
     )
 }
 
-export default Explore;
+export default Entrance;

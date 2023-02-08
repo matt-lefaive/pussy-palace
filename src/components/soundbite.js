@@ -24,7 +24,6 @@ import RoweNameTitle from '../svg/Rowe_Name+Title';
 import SinghNameTitle from '../svg/Singh_Name+Title';
 import VogelsNameTitle from '../svg/Vogels_Name+Title';
 import WoodwardNameTitle from '../svg/Woodward_Name+Title';
-import IconExplicit from '../svg/Icon_Explicit';
 
 const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimings, autoplay, updateParentTimestamp, explicit }) => {
     const [narratorHeadshotIndex, setNarratorHeadshotIndex] = useState(0);

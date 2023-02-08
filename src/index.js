@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
-  RouterProvider
+  RouterProvider,
+  Outlet
 } from 'react-router-dom';
 
 import './styles/index.css';
@@ -15,10 +16,10 @@ import Home from './pages/home';
 import Before from './pages/before';
 import Building from './pages/building';
 import Raid from './pages/raid';
-import Explore from './pages/explore';
 import Credits from './pages/credits';
 import After from './pages/after';
 
+import Entrance from './rooms/entrance';
 import Threshold from './rooms/threshold';
 import DanceFloor from './rooms/dance-floor';
 import Pool from './rooms/pool';
@@ -43,28 +44,34 @@ const router = createBrowserRouter([
     element: <Raid />
   },
   {
-    path: 'explore',
-    element: <Explore />
-  },
-  {
-    path: 'explore/threshold',
-    element: <Threshold />
-  },
-  {
-    path: 'explore/dance-floor',
-    element: <DanceFloor />
-  },
-  {
-    path: 'explore/pool',
-    element: <Pool />
-  },
-  {
-    path: 'explore/staircases',
-    element: <Staircases />
-  },
-  {
-    path: 'explore/cat-walk',
-    element: <CatWalk />
+    path: 'explore/',
+    element: <Outlet />,
+    children: [
+      {
+        path: 'entrance',
+        element: <Entrance />
+      },
+      {
+        path: 'threshold',
+        element: <Threshold />
+      },
+      {
+        path: 'dance-floor',
+        element: <DanceFloor />
+      },
+      {
+        path: 'pool',
+        element: <Pool />
+      },
+      {
+        path: 'staircases',
+        element: <Staircases />
+      },
+      {
+        path: 'cat-walk',
+        element: <CatWalk />
+      }
+    ]
   },
   {
     path: 'credits',

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ExploreIconRow from './explore-icon-row';
 import Soundbite from './soundbite';
 

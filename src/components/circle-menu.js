@@ -16,7 +16,7 @@ const CircleMenu = () => {
     return (
         <div class='circle-menu-container'>
             <div class='semi-circle'></div>
-            <div class='image-circle' onClick={() => window.location.href = '/explore'}></div>
+            <div class='image-circle' onClick={() => window.location.href = '/explore/entrance'}></div>
             <div 
                 id='circle-1' 
                 class='menu-circle' 
@@ -60,7 +60,7 @@ const CircleMenu = () => {
                 class='menu-circle-label'
                 onMouseEnter={mouseEnterLabel3}
                 onMouseLeave={mouseLeaveLabel3}
-                onClick={() => window.location.href = '/explore'}>
+                onClick={() => window.location.href = '/explore/entrance'}>
                 <div class='menu-circle-label-title'>Explore the<br/>Palace</div>
                 <div class='menu-circle-label-date'>2000</div>
             </div>

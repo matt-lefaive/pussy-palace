@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LeftArrow from '../svg/left-arrow';
 import RightArrow from '../svg/right-arrow';
 import HomeIcon from '../svg/home-icon';
@@ -7,7 +8,7 @@ import MapIcon from '../svg/map-icon';
 const NavBar = ({ room }) => {
     
     const rooms = [
-        {id: 'entrance', url: '/explore', text: 'EXIT THE PALACE'},
+        {id: 'entrance', url: '/explore/entrance', text: 'EXIT THE PALACE'},
         {id: 'threshold', url: '/explore/threshold', text: 'TO THE THRESHOLD'},
         {id: 'dance-floor', url: '/explore/dance-floor', text: 'TO THE DANCE FLOOR'},
         {id: 'pool', url: '/explore/pool', text: 'TO THE POOL'},
@@ -39,7 +40,7 @@ const NavBar = ({ room }) => {
 
     return (
         <div className={'navigation-panel' + showNavBar} style={{width: navBarWidth}}>
-            {prevRoom && <a className='previous-room-button' href={prevRoom.url}><LeftArrow /> {prevRoom.text}</a>}
+            {prevRoom && <Link className='previous-room-button' to={prevRoom.url}><LeftArrow /> {prevRoom.text}</Link>}
             <div className='navigation-menu-buffer'></div>
             <a className='home-button' href='/'>
                 <HomeIcon /> Home
@@ -48,7 +49,7 @@ const NavBar = ({ room }) => {
                 <MapIcon /> Map
             </div>
             <div className='navigation-menu-buffer'></div>
-            {nextRoom && <a className='next-room-button' href={nextRoom.url}>{nextRoom.text} <RightArrow /></a>}
+            {nextRoom && <Link className='next-room-button' to={nextRoom.url}>{nextRoom.text} <RightArrow /></Link>}
         </div>
     )
 }
