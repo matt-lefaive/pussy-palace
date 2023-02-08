@@ -3,21 +3,21 @@ import VolumeIcon from '../svg/volume-icon';
 import MuteIcon from '../svg/mute-icon';
 
 const AmbientAudioPlayer = ({ src }) => {
-    const [isPlaying, setIsPlaying] = useState(true);
+    const [isPlaying, setIsPlaying] = useState(null);
     
+    const ambientAudio = document.getElementById('ambient-audio');
+
     useEffect(() => {
-        const ambientAudio = document.getElementById('ambient-audio');
         try {
             ambientAudio.play();
             setIsPlaying(true);
         } catch (err) {
             setIsPlaying(false);
         }
-    }, [])
+    }, [src])
 
     const onPlayerClick = () => {
-        const ambientAudio = document.getElementById('ambient-audio');
-        if (!isPlaying) {
+        if (isPlaying) {
             ambientAudio.pause();
         } else {
             ambientAudio.play();
