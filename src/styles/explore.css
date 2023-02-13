@@ -378,13 +378,8 @@ svg.clickable:hover {
 /* ----- 00 - Entrance ----- */
 #entrance-assets {
   bottom: 0;
-  height: auto;
-  width: stretch;
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-#entrance-assets > svg {
+  height: 20%;
+  width: 100%;
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
 }
@@ -407,20 +402,20 @@ svg.clickable:hover {
 
 #threshold-gallant-outline {
   bottom: 0;
-  height: 83.5%;
+  height: 83%;
   width: 20%;
   left: 19.8%;
 }
 
 #threshold-miklos-outline {
-  top: 31.5%;
-  left: 42%;
+  top: 32%;
+  left: 42.25%;
   height: 45.5%;
   width: 14%;
 }
 
 #threshold-hamilton-outline {
-  top: 30%;
+  top: 30.5%;
   left: 57.5%;
   height: 16%;
   width: 11%;
@@ -568,64 +563,43 @@ svg.clickable:hover {
 }
 
 #cat-walk-tough-sweet-outline {
-  width: 40%;
+  width: 26%;
   height: 45%;
   bottom: 0;
-  right: 15.1%;
-}
-/* ----- RESIZE ROOM BASED ON SCREEN SIZE ----- */
-/*
-@media screen and (min-width: 0px) {
-  .room, #entrance-overlay {
-      width: 933px;
-      min-width: 933px;
-      max-width: 933px;
-      height: 720px;
-      min-height: 720px;
-      max-height: 720px;
-  }
+  right: 22%;
 }
 
-@media screen and (min-width: 1366px) {
-  .room, #entrance-overlay {
-      width: 1021px;
-      min-width: 1021px;
-      max-width: 1021px;
-      height: 788px;
-      min-height: 788px;
-      max-height: 788px;
-  }
+/* ----- 06 - Locker Room ----- */
+#locker-room-assets {
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 
-@media screen and (min-width: 1440px) {
-  .room, #entrance-overlay {
-      width: 1166px;
-      min-width: 1166px;
-      max-width: 1166px;
-      height: 900px;
-      min-height: 900px;
-      max-height: 900px;
-  }
+#locker-room-chan-outline {
+  width: 7%;
+  height: 7.5%;
+  bottom: 4.1%;
+  right: 29.8%;
 }
 
-@media screen and (min-width: 1536px) {
-  .room, #entrance-overlay {
-      width: 1120px;
-      min-width: 1120px;
-      max-width: 1120px;
-      height: 864px;
-      min-height: 864px;
-      max-height: 864px;
-  }
+#locker-room-dutrizac-outline {
+  width: 16%;
+  height: 78.9%;
+  bottom: 0;
+  left: 37.5%;
 }
 
-@media screen and (min-width: 1920px) {
-  .room, #entrance-overlay {
-      width: 1400px;
-      min-width: 1400px;
-      max-width: 1400px;
-      height: 1080px;
-      min-height: 1080px;
-      max-height: 1080px;
-  }
-}*/
+#locker-room-perry-outline {
+  width: 7.5%;
+  height: 5%;
+  right: 13.05%;
+  top: 14.2%;
+}
+
+#locker-room-racine-outline {
+  width: 40.5%;
+  height: 48.5%;
+  right: 5.1%;
+  top: 36.8%;
+}

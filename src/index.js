@@ -25,6 +25,7 @@ import DanceFloor from './rooms/dance-floor';
 import Pool from './rooms/pool';
 import Staircases from './rooms/staircases';
 import CatWalk from './rooms/cat-walk';
+import LockerRoom from './rooms/locker-room';
 
 const router = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: 'cat-walk',
         element: <CatWalk />
+      },
+      {
+        path: 'locker-room',
+        element: <LockerRoom />
       }
     ]
   },

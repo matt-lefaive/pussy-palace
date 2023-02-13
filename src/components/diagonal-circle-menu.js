@@ -19,7 +19,7 @@ const DiagonalCircleMenu = () => {
 
         // Change label text
         setLargeCircleLabelText([
-            {title: 'Before the Palace', subtitle: 'Policing and Toronto\'s QTBIPOC Communities', date:'1975 - 1984'},
+            {title: 'Before the Palace', subtitle: 'Policing and Toronto\'s Queer Communities', date:'1974 - 1981'},
             {title: 'Building the Palace', subtitle: 'Radical Sex Organizing', date:'1998 - 2000'},
             {title: 'Explore the Palace', subtitle: 'An Average Night', date:'2000'},
             {title: 'Raid on the Palace', subtitle: 'The Night of 2000 Pussies', date:'2000 - 2005'},
@@ -61,7 +61,7 @@ const DiagonalCircleMenu = () => {
             <div id='circle-5' className='small-circle'></div>
             <div id='circle-label-1' className='small-circle-label'>
                 <div className='circle-title'>Before the Palace</div>
-                <div className='circle-subtitle'>1975 - 1984</div>
+                <div className='circle-subtitle'>1974 - 1981</div>
             </div>
             <div id='circle-label-2' className='small-circle-label'>
                 <div className='circle-title'>Building the Palace</div>

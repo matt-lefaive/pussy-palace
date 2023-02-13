@@ -7,7 +7,7 @@ const Before = () => {
             <SideMenu active='before'/>
             <div className='content'>
                 <h2 className='content-title center pink'>BEFORE THE PALACE</h2>
-                <h3 className='content-subtitle center white'>POLICING AND TORONTO'S QTBIPOC COMMUNITIES</h3>
+                <h3 className='content-subtitle center white'>POLICING AND TORONTO'S QUEER COMMUNITIES</h3>
                 <img className='banner' alt='' src='/assets/images/before/Before_Banner.png'/>
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem.

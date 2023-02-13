@@ -17,6 +17,7 @@ import MalletteNameTitle from '../svg/Mallette_Name+Title';
 import McGregorNameTitle from '../svg/McGregor_Name+Title';
 import MiklosNameTitle from '../svg/Miklos_Name+Title';
 import OlenderNameTitle from '../svg/Olender_Name+Title';
+import PerryNameTitle from '../svg/Perry_Name+Title';
 import RacineNameTitle from '../svg/Racine_Name+Title';
 import RidgleyNameTitle from '../svg/Ridgley_Name+Title';
 import RobertonNameTitle from '../svg/Roberton_Name+Title';
@@ -34,9 +35,7 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
             // Find last timing that is less than current timestamp
             let i = narratorTimings.length - 1;
             for (i; i >= 0; i--) {
-                if (narratorTimings[i] < timestamp) {
-                    break;
-                }
+                if (narratorTimings[i] < timestamp) break;
             }
             if (i === -1) i = 0;
             if (narratorHeadshotIndex !== i) setNarratorHeadshotIndex(i);
@@ -76,6 +75,7 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
                     {narratorHeadshot === 'McGregor' && <McGregorNameTitle />}
                     {narratorHeadshot === 'Miklos' && <MiklosNameTitle />}
                     {narratorHeadshot === 'Olender' && <OlenderNameTitle />}
+                    {narratorHeadshot === 'Perry' && <PerryNameTitle />}
                     {narratorHeadshot === 'Racine' && <RacineNameTitle />}
                     {narratorHeadshot === 'Ridgley' && <RidgleyNameTitle />}
                     {narratorHeadshot === 'Roberton' && <RobertonNameTitle />}
