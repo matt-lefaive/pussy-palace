@@ -32,9 +32,9 @@ const NavBar = ({ room }) => {
     const floorMapOnClick = () => {
         const floorMap = document.getElementById('floor-map');
         if (floorMap.classList.contains('hidden')) {
-            floorMap.className = 'floor-map';
+            floorMap.className = 'floor-map-container';
         } else {
-            floorMap.className = 'floor-map hidden';
+            floorMap.className = 'floor-map-container hidden';
         }
     }
 
