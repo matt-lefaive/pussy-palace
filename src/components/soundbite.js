@@ -8,6 +8,7 @@ import BrushwoodRoseNameTitle from '../svg/BrushwoodRose_Name+Title';
 import CampbellSmithNameTitle from '../svg/CampbellSmith_Name+Title';
 import ChanNameTitle from '../svg/Chan_Name+Title';
 import DutrizacNameTitle from '../svg/Dutrizac_Name+Title';
+import FergusonNameTitle from '../svg/Ferguson_Name+Title';
 import GallantNameTitle from '../svg/Gallant_Name+Title';
 import HamiltonNameTitle from '../svg/Hamilton_Name+Title';
 import HornickNameTitle from '../svg/Hornick_Name+Title';
@@ -66,6 +67,7 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
                     {narratorHeadshot === 'CampbellSmith' && <CampbellSmithNameTitle />}
                     {narratorHeadshot === 'Chan' && <ChanNameTitle />}
                     {narratorHeadshot === 'Dutrizac' && <DutrizacNameTitle />}
+                    {narratorHeadshot === 'Ferguson' && <FergusonNameTitle />}
                     {narratorHeadshot === 'Gallant' && <GallantNameTitle />}
                     {narratorHeadshot === 'Hamilton' && <HamiltonNameTitle />}
                     {narratorHeadshot === 'Hornick' && <HornickNameTitle />}
