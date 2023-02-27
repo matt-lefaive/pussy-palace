@@ -7,6 +7,7 @@ import StaircasesHornickOutline from '../svg/Staircases_Hornick_Outline';
 import StaircasesInaccessibilityAtThePalaceOutline from '../svg/Staircases_inAccessibility-at-the-Palace_Outline';
 import VTTViewer from '../components/vtt-viewer';
 import captions from '../captions/captions.json';
+import '../styles/staircases.css'
 
 const Staircases = () => {
     const [hoveredSoundbiteID, setHoveredSoundbiteID] = useState(null);

@@ -8,6 +8,7 @@ import DanceFloorOlenderOutline from '../svg/DanceFloor_Olender_Outline';
 import DanceFloorRidgleyOutline from '../svg/DanceFloor_Ridgley_Outline';
 import VTTViewer from '../components/vtt-viewer';
 import captions from '../captions/captions.json';
+import '../styles/dance-floor.css'
 
 const DanceFloor = () => {
     const [hoveredSoundbiteID, setHoveredSoundbiteID] = useState(null);

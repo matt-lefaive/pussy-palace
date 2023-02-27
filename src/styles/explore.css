@@ -268,9 +268,8 @@ ul.room-dropdown > a > li:hover {
   width: 40%;
   max-height: 60%;
   height: 60%;
-  border: 1px solid white;
   z-index: 11;
-  background-color: black;
+  background-color: #2E2E2E;
   border-radius: 5px;
   padding: 16px;
 }
@@ -278,6 +277,24 @@ ul.room-dropdown > a > li:hover {
 .floor-map-horizontal-flex-container {
   display: flex;
   height: 100%;
+}
+
+.floor-map-close-button-wrapper {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+}
+
+.floor-map-close-button-wrapper:hover {
+  cursor: pointer;
+}
+
+.floor-map-close-button-wrapper > i {
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
 }
 
 .floor-select {
@@ -506,265 +523,24 @@ ul.room-dropdown > a > li:hover {
 
 /* ----- ROOM SPECIFICS ----- */
 /* ----- 00 - Entrance ----- */
-#entrance-assets {
-  bottom: 0;
-  height: 20%;
-  width: 100%;
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
 
-#entrance-door {
-  height: 22.6%;
-  width: 11.6%;
-  bottom: 2.3%;
-  left: 52.5%;
-  z-index: 20;
-}
 
 /* ----- 01 - Threshold ----- */
-#threshold-assets {
-  height: 83%;
-  width: 80%;
-  bottom: 0;
-  right: 0;
-}
 
-#threshold-gallant-outline {
-  bottom: 0;
-  height: 83%;
-  width: 20%;
-  left: 19.8%;
-}
-
-#threshold-miklos-outline {
-  top: 32%;
-  left: 42.25%;
-  height: 45.5%;
-  width: 14%;
-}
-
-#threshold-hamilton-outline {
-  top: 30.5%;
-  left: 57.5%;
-  height: 16%;
-  width: 11%;
-}
 
 /* ----- 02 - Dance Floor ----- */
-#dance-floor-assets {
-  height: 100%;
-  width: 100%;
-  bottom: 0;
-  right: 0;
-} 
 
-#dance-floor-mallette-outline {
-  height: 59%;
-  width: 20%;
-  bottom: 0;
-  right: 27%;
-}
-
-#dance-floor-music-chlorine-sex-alcohol-outline {
-  height: 18%;
-  width: 11%;
-  top: 36.5%;
-  left: 24%;
-}
-
-#dance-floor-olender-outline {
-  height: 55%;
-  width: 27%;
-  bottom: 0;
-  left: 0;
-}
-
-#dance-floor-ridgley-outline {
-  height: 13%;
-  width: 13.5%;
-  top: 12%;
-  right: 2.5%;
-}
 
 /* ----- 03 - Pool ----- */
-#pool-assets {
-  width: 100%;
-  height: 85%;
-  bottom: 0;
-}
 
-#pool-campbell-smith-outline {
-  height: 28%;
-  width: 26%;
-  left: 0;
-  top: 21%;
-}
-
-#pool-chan-outline {
-  height: 26.5%;
-  width: 13%;
-  top: 27%;
-  right: 14%;
-}
-
-#pool-cupid-board-outline {
-  height: 25.6%;
-  width: 16%;
-  bottom: 1.25%;
-  left: 26.7%;
-}
-
-#pool-mcgregor-outline {
-  height: 13.5%;
-  width: 5%;
-  top: 38.5%;
-  left: 43.7%;
-}
 
 /* ----- 04 - Staircases ----- */
-#staircases-assets {
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
 
-#staircases-brushwood-rose-outline {
-  width: 14%;
-  height: 63%;
-  top: 13%;
-  left: 43.1%;
-}
-
-#staircases-hornick-outline {
-  width: 35%;
-  height: 88%;
-  right: 1%;
-  bottom: 7%;
-}
-
-#staircases-inaccessibility-at-the-palace-outline {
-  width: 26%;
-  height: 25.5%;
-  bottom: 0;
-  left: 27.25%;
-}
 
 /* ----- 05 - Cat Walk ----- */
-#cat-walk-assets {
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
 
-#cat-walk-campbell-smith-outline {
-  width: 13.5%;
-  height: 33%;
-  left: 35.7%;
-  top: 52%;
-}
-
-#cat-walk-dutrizac-outline {
-  width: 6%;
-  height: 7.5%;
-  top: 0;
-  left: 58.9%;
-}
-
-#cat-walk-irwin-outline {
-  width: 17%;
-  height: 50%;
-  top: 47.8%;
-  left: 4.6%;
-}
-
-#cat-walk-mallette-outline {
-  width: 10.3%;
-  height: 25.5%;
-  left: 26.35%;
-  top: 11.8%;
-}
-
-#cat-walk-roberton-outline {
-  width: 15%;
-  height: 25.5%;
-  bottom: 12%;
-  right: 1.7%;
-}
-
-#cat-walk-tough-sweet-outline {
-  width: 26%;
-  height: 45%;
-  bottom: 0;
-  right: 22%;
-}
 
 /* ----- 06 - Locker Room ----- */
-#locker-room-assets {
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
 
-#locker-room-chan-outline {
-  width: 7%;
-  height: 7.5%;
-  bottom: 4.1%;
-  right: 29.8%;
-}
-
-#locker-room-dutrizac-outline {
-  width: 16%;
-  height: 78.9%;
-  bottom: 0;
-  left: 37.5%;
-}
-
-#locker-room-perry-outline {
-  width: 7.5%;
-  height: 5%;
-  right: 13.05%;
-  top: 14.2%;
-}
-
-#locker-room-racine-outline {
-  width: 40.5%;
-  height: 48.5%;
-  right: 5.1%;
-  top: 36.8%;
-}
 
 /* ----- 07 - Group Sex Room ----- */
-#group-sex-room-assets {
-  width: 100%;
-  height: 80.5%;
-  bottom: 0;
-}
-
-#group-sex-room-ferguson-outline {
-  width: 18.7%;
-  height: 18.7%;
-  top: 7.55%;
-  left: 1.1%;
-}
-
-#group-sex-room-fuck-line-outline {
-  width: 3.5%;
-  height: 11%;
-  bottom: 3.2%;
-  left: 7.66%;
-}
-
-#group-sex-room-gallant-outline {
-  width: 29%;
-  height: 47.5%;
-  bottom: 0;
-  left: 36%;
-}
-
-#group-sex-room-roberton-outline {
-  width: 25%;
-  height: 29.5%;
-  right: 5.25%;
-  bottom: 19%;
-}

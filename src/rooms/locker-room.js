@@ -8,6 +8,7 @@ import LockerRoomPerryOutline from '../svg/LockerRoom_Perry_Outline';
 import LockerRoomRacineOutline from '../svg/LockerRoom_Racine_Outline';
 import VTTViewer from '../components/vtt-viewer';
 import captions from '../captions/captions.json';
+import '../styles/locker-room.css'
 
 const LockerRoom = () => {
     const [hoveredSoundbiteID, setHoveredSoundbiteID] = useState(null);

@@ -8,6 +8,7 @@ import PoolCupidBoardOutline from '../svg/Pool_Cupid-Board_Outline';
 import PoolMcGregorOutline from '../svg/Pool_McGregor_Outline';
 import VTTViewer from '../components/vtt-viewer';
 import captions from '../captions/captions.json';
+import '../styles/pool.css'
 
 const Pool = () => {
     const [hoveredSoundbiteID, setHoveredSoundbiteID] = useState(null);

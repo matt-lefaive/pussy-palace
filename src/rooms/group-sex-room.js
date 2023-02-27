@@ -8,6 +8,7 @@ import GroupSexRoomGallantOutline from '../svg/GroupSexRoom_Gallant_Outline';
 import GroupSexRoomRobertonOutline from '../svg/GroupSexRoom_Roberton_Outline';
 import VTTViewer from '../components/vtt-viewer';
 import captions from '../captions/captions.json';
+import '../styles/group-sex-room.css'
 
 const GroupSexRoom = () => {
     const [hoveredSoundbiteID, setHoveredSoundbiteID] = useState(null);

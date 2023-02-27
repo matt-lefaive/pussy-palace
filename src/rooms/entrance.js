@@ -4,6 +4,7 @@ import Room from '../components/room';
 import EntranceAssets from '../svg/Entrance_Assets';
 import EntranceDoor from '../svg/Entrance_Door';
 import EntranceOverlay from '../components/entrance-overlay';
+import '../styles/entrance.css'
 
 const Entrance = () => {
     

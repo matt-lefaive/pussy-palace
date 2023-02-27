@@ -10,6 +10,7 @@ import CatWalkRobertonOutline from '../svg/CatWalk_Roberton_Outline';
 import CatWalkToughSweetOutline from '../svg/CatWalk_Tough+Sweet_Outline';
 import VTTViewer from '../components/vtt-viewer';
 import captions from '../captions/captions.json';
+import '../styles/cat-walk.css';
 
 const CatWalk = () => {
     const [hoveredSoundbiteID, setHoveredSoundbiteID] = useState(null);

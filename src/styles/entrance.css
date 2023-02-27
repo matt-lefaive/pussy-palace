@@ -1,0 +1,15 @@
+#entrance-assets {
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  #entrance-door {
+    height: 22.6%;
+    width: 11.6%;
+    bottom: 2.3%;
+    left: 52.5%;
+    z-index: 20;
+  }

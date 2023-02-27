@@ -7,6 +7,7 @@ import ThresholdMiklosOutline from '../svg/Threshold_Miklos_Outline';
 import ThresholdHamiltonOutline from '../svg/Threshold_Hamilton_Outline';
 import VTTViewer from '../components/vtt-viewer';
 import captions from '../captions/captions.json';
+import '../styles/threshold.css'
 
 const Threshold = () => {
     const [hoveredSoundbiteID, setHoveredSoundbiteID] = useState(null);
