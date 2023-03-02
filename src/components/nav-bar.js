@@ -31,10 +31,13 @@ const NavBar = ({ room }) => {
 
     const floorMapOnClick = () => {
         const floorMap = document.getElementById('floor-map');
+        const floorMapBackgroundLayer = document.getElementById('floor-map-background-layer');
         if (floorMap.classList.contains('hidden')) {
             floorMap.className = 'floor-map-container';
+            floorMapBackgroundLayer.className = 'floor-map-background-layer';
         } else {
             floorMap.className = 'floor-map-container hidden';
+            floorMapBackgroundLayer.className = 'floor-map-background-layer hidden';
         }
     }
 
