@@ -1,0 +1,35 @@
+.credits a {
+    color: #FFA1C3;
+}
+  
+.credits a:visited {
+    color: #C4C4C4;
+}
+  
+.credits a:hover {
+    color: #FF5C97;
+}
+
+.credits .line {
+    height: 3px;
+    background-color: white;
+    margin: 16px 0;
+}
+
+.narrator-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 130px;
+    row-gap: 44px;
+}
+
+.narrator-card {
+    text-align: center;
+    max-width: 160px;
+}
+
+.narrator-grid img {
+    max-height: 120px;
+    max-width: 160px;
+}

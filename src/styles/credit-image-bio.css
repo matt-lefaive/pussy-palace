@@ -1,0 +1,36 @@
+.credit-photo-list {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+.credit-photo {
+    height: 200px;
+    width: 140px;
+    margin: 0 4px;
+}
+
+.credit-photo:hover {
+    cursor: pointer;
+}
+
+.person-name-role {
+    display: flex;
+    justify-content: space-between;
+}
+
+.person-name {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #FF5C97;
+}
+
+.person-role {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 10%;
+    color: #FF5C97;
+    text-transform: uppercase;
+}
