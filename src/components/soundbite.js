@@ -4,6 +4,7 @@ import SoundbitePlayer from './soundbite-player';
 import ExplicitIcon from '../svg/Icon_Explicit';
 
 import BeeverNameTitle from '../svg/Beever_Name+Title';
+import BlakkNameTitle from '../svg/Blakk_Name+Title';
 import BrushwoodRoseNameTitle from '../svg/BrushwoodRose_Name+Title';
 import CampbellSmithNameTitle from '../svg/CampbellSmith_Name+Title';
 import ChanNameTitle from '../svg/Chan_Name+Title';
@@ -63,6 +64,7 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
             <div className='soundbite-narrator'>
                 <div className='narrator-name-title'>
                     {narratorHeadshot === 'Beever' && <BeeverNameTitle />}
+                    {narratorHeadshot === 'Blakk' && <BlakkNameTitle />}
                     {narratorHeadshot === 'BrushwoodRose' && <BrushwoodRoseNameTitle />}
                     {narratorHeadshot === 'CampbellSmith' && <CampbellSmithNameTitle />}
                     {narratorHeadshot === 'Chan' && <ChanNameTitle />}

@@ -17,7 +17,7 @@ const NavBar = ({ room }) => {
         {id: 'locker-room', url: '/explore/locker-room', text: 'TO THE LOCKER ROOM'},
         {id: 'group-sex-room', url: '/explore/group-sex-room', text: 'TO THE GROUP SEX ROOM'},
         {id: 'private-rooms', url: '/explore/private-rooms', text: 'TO THE PRIVATE ROOMS'},
-        {id: 'photo-booth-temple', url: '/explore/photo-booth-temple', text: 'TO THE PHOTO BOOTH'},
+        {id: 'photo-booth-temple', url: '/explore/photo-booth-temple', text: 'TO THE PHOTO BOOTH/TEMPLE'},
         {id: 'raid', url: '/raid', text: 'LEARN ABOUT THE RAID'}
     ];
 
