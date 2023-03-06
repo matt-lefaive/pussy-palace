@@ -1,34 +1,33 @@
 #dance-floor-assets {
-    height: 100%;
-    width: 100%;
-    bottom: 0;
-    right: 0;
-  } 
+  height: 88%;
+  width: 100%;
+  bottom: 0;
+} 
   
-  #dance-floor-mallette-outline {
-    height: 59%;
-    width: 20%;
-    bottom: 0;
-    right: 27%;
-  }
+#dance-floor-mallette-outline {
+  height: 59%;
+  width: 20%;
+  bottom: 0;
+  right: 27%;
+}
   
-  #dance-floor-music-chlorine-sex-alcohol-outline {
-    height: 18%;
-    width: 11%;
-    top: 36.5%;
-    left: 24%;
-  }
+#dance-floor-music-chlorine-sex-alcohol-outline {
+  height: 14.2%;
+  width: 9%;
+  top: 36.6%;
+  left: 24.1%;
+}
   
-  #dance-floor-olender-outline {
-    height: 55%;
-    width: 27%;
-    bottom: 0;
-    left: 0;
-  }
+#dance-floor-olender-outline {
+  height: 55%;
+  width: 25%;
+  bottom: 0;
+  left: 3%;
+}
   
-  #dance-floor-ridgley-outline {
-    height: 13%;
-    width: 13.5%;
-    top: 12%;
-    right: 2.5%;
-  }
+#dance-floor-ridgley-outline {
+  height: 13%;
+  width: 13.5%;
+  top: 12%;
+  right: 2.5%;
+}

@@ -67,6 +67,15 @@ svg.clickable:hover {
     drop-shadow(0 0 10px #ff5c97);
 }
 
+/* Unsure of these two */
+svg.clickable > g > path {
+  fill: transparent;
+}
+
+svg.clickable > g > path:hover {
+  cursor: pointer;
+}
+
 path.clickable:hover {
   fill: #ffa1c3;
   cursor: pointer;
