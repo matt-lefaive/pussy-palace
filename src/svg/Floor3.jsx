@@ -21,7 +21,7 @@ const Floor3 = ({ currentRoom, setHoveredRoom }) => {
         <g>
           <path
             id='private-rooms-path'
-            fill="#323232"
+            fill="#565656"
             d="M32 179l-6-8v-20l6-7h31v-16h-3v13H35v-31h4V81h-4V57h19V46h42v10h15v52h1v3h3v12h-3v4H77v3h17v10H77v3h17v6h3v14h-3v34l-10 13H35v-31h-3zM151 56v70h-3v10h48v13h-21v5h-3v13h3v23h57v-51h-23v10h-3v-13h26V56h-3l-22-21h-26l-21 21h-9zM172 195v10h2v30h24v3h10v-3h24v-42h-57v2h-3z"
             className={`clickable ${currentRoom === 'private-rooms' ? 'current-room' : ''}`}
             onMouseEnter={() => setHoveredRoom('private-rooms')}
@@ -305,6 +305,15 @@ const Floor3 = ({ currentRoom, setHoveredRoom }) => {
           ></path>
         </g>
       </g>
+      {/* Floor 3 Add On Dotted */}
+      <path
+        fill="none"
+        stroke="yellow"
+        strokeDasharray="4"
+        strokeLinejoin="miter"
+        strokeWidth="2"
+        d="M236 239h6v227H42.5h0l-5-7.5s-12.5 5-15 2.5 5-12.5 5-12.5l-7.5-5v-75h-5v-70.448"
+      ></path>
     </svg>
   );
 }

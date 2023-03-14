@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 
 import './styles/index.css';
-import './styles/circle-menu.css';
 import './styles/home.css';
 import './styles/diagonal-circle-menu.css';
 import './styles/explore.css'

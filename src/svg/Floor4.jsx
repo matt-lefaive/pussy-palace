@@ -163,6 +163,15 @@ const Floor4 = ({ currentRoom, setHoveredRoom }) => {
           <path d="M92 210H71M89 213l3-3-3-3"></path>
         </g>
       </g>
+      {/* Floor 4 Add On Dotted */}
+      <path
+        fill="none"
+        stroke="yellow"
+        strokeDasharray="4"
+        strokeLinejoin="miter"
+        strokeWidth="2"
+        d="M239 236v226H39.5h0l-5-7.5s-12.5 5-15 2.5 5-12.5 5-12.5l-7.5-5v-75h-5v-73.431"
+      ></path>
     </svg>
   );
 }

@@ -20,7 +20,7 @@ const Floor2 = ({ currentRoom, setHoveredRoom }) => {
       <Link to='/explore/cat-walk'>
         <path
           id='cat-walk-path'
-          fill="#323232"
+          fill="#565656"
           d="M113 89v101H81v24h4v4h14v-4h50v-7h4v-12h-4v-95h-1V89h-35z"
           className={`clickable ${currentRoom === 'cat-walk' ? 'current-room' : ''}`}
           onMouseEnter={() => setHoveredRoom('cat-walk')}
@@ -31,7 +31,7 @@ const Floor2 = ({ currentRoom, setHoveredRoom }) => {
       <Link to='/explore/group-sex-room'>
         <path
           id='group-sex-room-path'
-          fill="#323232"
+          fill="#565656"
           d="M157 59l22-23h25l23 23h4v103h-78v-42h-4v-20h3V59h5z"
           className={`clickable ${currentRoom === 'group-sex-room' ? 'current-room' : ''}`}
           onMouseEnter={() => setHoveredRoom('group-sex-room')}
@@ -42,7 +42,7 @@ const Floor2 = ({ currentRoom, setHoveredRoom }) => {
       <Link to='/explore/locker-room'>
         <path
           id='locker-room-path'
-          fill="#323232"
+          fill="#565656"
           d="M153 166v73h25v-4h28v3h8v4h12v-5h5v-71h-78z"
           className={`clickable ${currentRoom === 'locker-room' ? 'current-room' : ''}`}
           onMouseEnter={() => setHoveredRoom('locker-room')}
@@ -297,6 +297,15 @@ const Floor2 = ({ currentRoom, setHoveredRoom }) => {
           d="M172.43 329.097c.148.148.39.177.554.341.075.075.013.275.149.32.016.005.411-.444.512-.512-.301-.301-.878-.486-1.215-.149z"
         ></path>
       </g>
+      {/* Floor 2 Add On Dotted */}
+      <path
+        fill="none"
+        stroke="yellow"
+        strokeDasharray="4"
+        strokeLinejoin="miter"
+        strokeWidth="2"
+        d="M234 242h6v227H40.5h0l-5-7.5s-12.5 5-15 2.5 5-12.5 5-12.5l-7.5-5v-75"
+      ></path>
     </svg>
   );
 }

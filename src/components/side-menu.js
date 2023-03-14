@@ -5,10 +5,12 @@ import CollabLogo from './collab-logo';
 const SideMenu = ({ active }) => {
     return (
         <div className='sidemenu'>
-            <div style={{height: 'auto', width: '175px'}}>
-                <CollabLogo />
-            </div>
-            <Title />
+            <a href='/#skip' className='skip-fade'>
+                <div style={{height: 'auto', width: '175px'}}>
+                    <CollabLogo />
+                </div>
+                <Title />
+            </a>
             <div className='sidemenu-links-wrapper'>
                 <a href='/before' className={active === 'before' ? 'active' : ''}>BEFORE THE PALACE</a>
                 <a href='/building' className={active === 'building' ? 'active' : ''}>BUILDING THE PALACE</a>

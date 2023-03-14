@@ -7,34 +7,15 @@
 .menu-buffer {
   flex: 1 0;
 }
-  
+
+a.skip-fade:hover {
+  text-decoration: none;
+}
 
 /* ----- HEIGHT-BASED MEDIA QUERIES ----- */
 @media (max-height: 800px) {
   .project-description {
     padding-top: 10px;
+    padding-left: 1em;
   }
 }
-
-/* ----- MEDIA QUERIES ----- */
-/* ----- Mobile ----- */
-@media (max-width: 480px) {
-    
-}
-  
-/* ----- Tablets ----- */
-@media (max-width: 768px) {
-    
-}
-  
-/* ----- Small Screens ----- */
-@media (max-width: 1024px) {
-
-}
-  
-/* ----- Large Screens ----- */
-@media (max-width: 1500px) {
-    
-}
-
-/* ------ Extra Large Screen ----- */

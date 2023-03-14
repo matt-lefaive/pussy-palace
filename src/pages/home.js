@@ -35,16 +35,22 @@ const Home = () => {
     useEffect(() => {
         const black1 = document.getElementById('black-1');
         const black2 = document.getElementById('black-2');
+
+        // Only fade in if the URL hash isn't 'skip'
+        if (window.location.hash === '#skip') {
+            black1.style.visibility = 'hidden';
+            black2.style.visibility = 'hidden';
+        } else {
+            black1.style.transition = fadeOut.transition;
+            black1.style.opacity = fadeOut.opacity;
+            black1.style.visibility = fadeOut.visibility;
         
-        black1.style.transition = fadeOut.transition;
-        black1.style.opacity = fadeOut.opacity;
-        black1.style.visibility = fadeOut.visibility;
-        
-        setTimeout(() => {
-            black2.style.transition = fadeOut.transition;
-            black2.style.opacity = fadeOut.opacity;
-            black2.style.visibility = fadeOut.visibility;
-        }, 1500)
+            setTimeout(() => {
+                black2.style.transition = fadeOut.transition;
+                black2.style.opacity = fadeOut.opacity;
+                black2.style.visibility = fadeOut.visibility;
+            }, 1500);   
+        }
     });
 
     return (
