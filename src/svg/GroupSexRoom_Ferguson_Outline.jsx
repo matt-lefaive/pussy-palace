@@ -24,7 +24,6 @@ const GroupSexRoomFergusonOutline = () => {
         strokeLinejoin="round"
         strokeWidth="4"
         transform="translate(-34.831 -162.392)"
-        vectornatorLayerName="Ferguson"
       >
         <path
           d="M505 233.339l-19.897-5.855s-1.386-.316-1.775-1.171.219-2.25.219-2.25l10.79-34.985s.685-1.607 1.731-2.171c1.046-.564 2.455-.085 2.455-.085l32.871 9.801s1.35.433 1.838 1.529c.489 1.096.116 2.855.116 2.855l-10.209 30.301"

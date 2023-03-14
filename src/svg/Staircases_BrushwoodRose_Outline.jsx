@@ -4,7 +4,6 @@ function Icon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsVectornator="http://vectornator.io"
       width="266.718"
       height="1307.696"
       fillRule="nonzero"
@@ -24,7 +23,6 @@ function Icon() {
         strokeLinecap="round"
         strokeLinejoin="round"
         transform="translate(-1272.603 -311.17)"
-        vectornatorLayerName="BrushwoodRose"
       >
         <path
           strokeWidth="5"

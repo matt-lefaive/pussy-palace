@@ -28,7 +28,6 @@ const CatWalkDutrizacOutline = () => {
         strokeWidth='5'
         clipPath='url(#ArtboardFrame)'
         transform='translate(-1659.75)'
-        vectornatorLayerName='Dutrizac'
       >
         <path
           d='M1667 0s-19 36 19 54c5 0-2.94 12.068 2 18 5 6 8 5.25 14 11s3.25 6.25 7 10 7 3 7 3-6 0-12 10c-7 17-5 47 21 51 9 2 29 0 33-28 5-24-13-32-13-32l-12-2'

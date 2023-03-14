@@ -4,7 +4,6 @@ function Icon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsVectornator="http://vectornator.io"
       width="2800"
       height="1901.96"
       fillRule="nonzero"
@@ -19,7 +18,6 @@ function Icon() {
       <g
         fillRule="nonzero"
         transform="translate(0 -258.04)"
-        vectornatorLayerName="Asset.1"
       >
         <path
           fill="#000"
@@ -50,7 +48,7 @@ function Icon() {
           opacity="0.653"
         ></path>
       </g>
-      <g transform="translate(0 -258.04)" vectornatorLayerName="Asset.2">
+      <g transform="translate(0 -258.04)">
         <path
           fill="#000"
           fillOpacity="0.6"
@@ -60,7 +58,7 @@ function Icon() {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -258.04)" vectornatorLayerName="Asset.3">
+      <g transform="translate(0 -258.04)">
         <path
           fill="#000"
           fillOpacity="0.65"
@@ -70,7 +68,7 @@ function Icon() {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -258.04)" vectornatorLayerName="Asset.4">
+      <g transform="translate(0 -258.04)">
         <path
           fill="#000"
           fillOpacity="0.7"
@@ -80,7 +78,7 @@ function Icon() {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -258.04)" vectornatorLayerName="Asset.5">
+      <g transform="translate(0 -258.04)">
         <path
           fill="#000"
           fillOpacity="0.72"
@@ -90,7 +88,7 @@ function Icon() {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -258.04)" vectornatorLayerName="Asset.6">
+      <g transform="translate(0 -258.04)">
         <path
           fill="#000"
           fillOpacity="0.74"
@@ -100,7 +98,7 @@ function Icon() {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -258.04)" vectornatorLayerName="Asset.7">
+      <g transform="translate(0 -258.04)">
         <path
           fill="#000"
           fillOpacity="0.75"
@@ -116,7 +114,6 @@ function Icon() {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -258.04)"
-        vectornatorLayerName="Asset.8"
       >
         <path
           fill="#000"
@@ -130,7 +127,6 @@ function Icon() {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -258.04)"
-        vectornatorLayerName="Asset.9"
       >
         <path
           fill="#000"
@@ -141,7 +137,7 @@ function Icon() {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -258.04)" vectornatorLayerName="Asset.10">
+      <g transform="translate(0 -258.04)">
         <path
           fill="#000"
           fillOpacity="0.7"
@@ -154,7 +150,6 @@ function Icon() {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -258.04)"
-        vectornatorLayerName="Asset.11"
       >
         <path
           fill="#000"
@@ -168,7 +163,6 @@ function Icon() {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -258.04)"
-        vectornatorLayerName="Asset.12"
       >
         <path
           fill="#000"
@@ -181,7 +175,6 @@ function Icon() {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -258.04)"
-        vectornatorLayerName="Asset.13"
       >
         <path
           fill="#000"
@@ -192,7 +185,7 @@ function Icon() {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -258.04)" vectornatorLayerName="Asset.14">
+      <g transform="translate(0 -258.04)">
         <g fillRule="nonzero" opacity="1">
           <path
             fill="#000"

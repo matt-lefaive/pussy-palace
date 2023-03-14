@@ -4,7 +4,6 @@ function Icon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsVectornator="http://vectornator.io"
       width="432.689"
       height="1082.015"
       fillRule="nonzero"
@@ -17,7 +16,7 @@ function Icon() {
       xmlSpace="preserve"
       className='clickable'
     >
-      <g transform="translate(-149.562 -1030.022)" vectornatorLayerName="Irwin" fill='rgba(0,0,0,0)' className='object-glow'>
+      <g transform="translate(-149.562 -1030.022)" fill='rgba(0,0,0,0)' className='object-glow'>
         <path
           fill="none"
           stroke="#ff5c97"

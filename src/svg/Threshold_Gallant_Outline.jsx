@@ -4,7 +4,6 @@ function Icon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsVectornator="http://vectornator.io"
       width="552.305"
       height="1794.45"
       fillRule="nonzero"
@@ -28,7 +27,6 @@ function Icon() {
         strokeLinejoin="round"
         clipPath="url(#ArtboardFrame)"
         transform="translate(-565.204 -365.55)"
-        vectornatorLayerName="Gallant"
       >
         <path
           strokeWidth="2.5"

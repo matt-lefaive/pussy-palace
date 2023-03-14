@@ -4,7 +4,6 @@ const PrivateRoomsFergusonOutline = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsVectornator="http://vectornator.io"
       width="667"
       height="778"
       fillRule="nonzero"
@@ -25,7 +24,6 @@ const PrivateRoomsFergusonOutline = () => {
         strokeLinejoin="round"
         strokeWidth="5"
         transform="translate(-410.5 -118.5)"
-        vectornatorLayerName="Ferguson"
       >
         <path d="M416 894l1-738 607 190v361" opacity="1"></path>
         <path d="M416 152l-3-31 662 204-3 368" opacity="1"></path>

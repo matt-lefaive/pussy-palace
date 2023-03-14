@@ -4,7 +4,6 @@ const PrivateRoomsAssets = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsVectornator="http://vectornator.io"
       width="2800"
       height="1492.6"
       fillRule="nonzero"
@@ -16,7 +15,7 @@ const PrivateRoomsAssets = () => {
       viewBox="0 0 2800 1492.6"
       xmlSpace="preserve"
     >
-      <g transform="translate(0 -667.4)" vectornatorLayerName="Layer 1">
+      <g transform="translate(0 -667.4)">
         <path
           fill="#000"
           fillRule="nonzero"
@@ -34,7 +33,6 @@ const PrivateRoomsAssets = () => {
         stroke="none"
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -667.4)"
-        vectornatorLayerName="Layer 2"
       >
         <path
           d="M2577.46 1760s3.51 2.47 9.12 4.67c3.61 1.42 8.83 1.47 12.75 2.74 3.35 1.08 2.83 2.34 10.07 3.41 5.21.76 9.22-2.03 9.22-2.03l17.25-64.57-35.79-7.98z"
@@ -45,7 +43,7 @@ const PrivateRoomsAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -667.4)" vectornatorLayerName="Layer 3">
+      <g transform="translate(0 -667.4)">
         <path
           fill="#000"
           fillRule="nonzero"
@@ -57,7 +55,6 @@ const PrivateRoomsAssets = () => {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -667.4)"
-        vectornatorLayerName="Layer 4"
       >
         <path
           fill="#000"
@@ -70,7 +67,6 @@ const PrivateRoomsAssets = () => {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -667.4)"
-        vectornatorLayerName="Layer 5"
       >
         <path
           fill="#000"
@@ -83,7 +79,6 @@ const PrivateRoomsAssets = () => {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -667.4)"
-        vectornatorLayerName="Layer 6"
       >
         <path
           fill="#000"

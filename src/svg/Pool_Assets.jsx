@@ -4,7 +4,6 @@ const PoolAssets = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsVectornator="http://vectornator.io"
       width="2800"
       height="1838"
       fillRule="nonzero"
@@ -16,7 +15,7 @@ const PoolAssets = () => {
       viewBox="0 0 2800 1838"
       xmlSpace="preserve"
     >
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 1">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.55"
@@ -26,7 +25,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Later 1.2">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.65"
@@ -36,7 +35,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 2">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.6"
@@ -46,7 +45,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 3">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.65"
@@ -62,7 +61,6 @@ const PoolAssets = () => {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -322)"
-        vectornatorLayerName="Layer 4"
       >
         <path
           fill="#000"
@@ -73,7 +71,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 5">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.7"
@@ -83,7 +81,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 6">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.65"
@@ -93,7 +91,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 7">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.8"
@@ -103,7 +101,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 7.1">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.75"
@@ -113,7 +111,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 8">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.8"
@@ -126,7 +124,6 @@ const PoolAssets = () => {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -322)"
-        vectornatorLayerName="Layer 9"
       >
         <path
           fill="#000"
@@ -137,7 +134,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 10">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.8"
@@ -147,7 +144,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 11">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.8"
@@ -160,7 +157,6 @@ const PoolAssets = () => {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -322)"
-        vectornatorLayerName="Layer 12"
       >
         <path
           fill="#000"
@@ -174,7 +170,6 @@ const PoolAssets = () => {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -322)"
-        vectornatorLayerName="Layer 13"
       >
         <path
           fill="#000"
@@ -188,7 +183,6 @@ const PoolAssets = () => {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -322)"
-        vectornatorLayerName="Layer 14"
       >
         <path
           fill="#000"
@@ -199,7 +193,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 15">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.85"
@@ -209,7 +203,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 16">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillRule="nonzero"
@@ -218,7 +212,7 @@ const PoolAssets = () => {
           opacity="1"
         ></path>
       </g>
-      <g transform="translate(0 -322)" vectornatorLayerName="Layer 17">
+      <g transform="translate(0 -322)">
         <path
           fill="#000"
           fillOpacity="0.85"
@@ -231,7 +225,6 @@ const PoolAssets = () => {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -322)"
-        vectornatorLayerName="Layer 18"
       >
         <path
           fill="#000"
@@ -245,7 +238,6 @@ const PoolAssets = () => {
       <g
         clipPath="url(#ArtboardFrame)"
         transform="translate(0 -322)"
-        vectornatorLayerName="Layer 19"
       >
         <path
           fill="#000"

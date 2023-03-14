@@ -23,7 +23,6 @@ const LockerRoomChanOutline = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
         transform="translate(-1794.235 -1908.161)"
-        vectornatorLayerName="Chan"
       >
         <path
           strokeWidth="4"
