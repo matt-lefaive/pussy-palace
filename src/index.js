@@ -28,6 +28,7 @@ import CatWalk from './rooms/cat-walk';
 import LockerRoom from './rooms/locker-room';
 import GroupSexRoom from './rooms/group-sex-room';
 import PrivateRooms from './rooms/private-rooms';
+import PhotoBoothTemple from './rooms/photo-booth-temple';
 
 const router = createBrowserRouter([
   {
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
       {
         path: 'private-rooms',
         element: <PrivateRooms />
+      },
+      {
+        path: 'photo-booth-temple',
+        element: <PhotoBoothTemple />
       }
     ]
   },

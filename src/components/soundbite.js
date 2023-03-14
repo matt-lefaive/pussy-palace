@@ -20,6 +20,7 @@ import McGregorNameTitle from '../svg/McGregor_Name+Title';
 import MiklosNameTitle from '../svg/Miklos_Name+Title';
 import OlenderNameTitle from '../svg/Olender_Name+Title';
 import PerryNameTitle from '../svg/Perry_Name+Title';
+import PowersNameTitle from '../svg/Powers_Name+Title';
 import RacineNameTitle from '../svg/Racine_Name+Title';
 import RidgleyNameTitle from '../svg/Ridgley_Name+Title';
 import RobertonNameTitle from '../svg/Roberton_Name+Title';
@@ -80,6 +81,7 @@ const Soundbite = ({ title, subtitle, description, src, narrators, narratorTimin
                     {narratorHeadshot === 'Miklos' && <MiklosNameTitle />}
                     {narratorHeadshot === 'Olender' && <OlenderNameTitle />}
                     {narratorHeadshot === 'Perry' && <PerryNameTitle />}
+                    {narratorHeadshot === 'Powers' && <PowersNameTitle />}
                     {narratorHeadshot === 'Racine' && <RacineNameTitle />}
                     {narratorHeadshot === 'Ridgley' && <RidgleyNameTitle />}
                     {narratorHeadshot === 'Roberton' && <RobertonNameTitle />}
