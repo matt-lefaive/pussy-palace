@@ -6,11 +6,13 @@ const TabPanel = ({ mode, tabs, content, alts }) => {
 
     return (
         <div>
-            <div className='tab-panel'>
+            <div className='tab-panel' role='tablist'>
                 {tabs.map((x, i) => {
                     if (mode === 'text') {
                         return (
                             <div 
+                                role='tab'
+                                aria-selected={currentTab === i}
                                 className={`tab-text${currentTab === i ? '-active' : ''}`}
                                 key={`tab-text-${i}`}
                                 onClick={() => setCurrentTab(i)}
@@ -21,6 +23,8 @@ const TabPanel = ({ mode, tabs, content, alts }) => {
                     } else if (mode === 'logo') {
                         return (
                             <div 
+                                role='tab'
+                                aria-selected={currentTab === i}
                                 className={`tab-logo${currentTab === i ? ' tab-logo-active' : ''}`}
                                 key={`tab-logo-${i}`}
                             >
@@ -34,7 +38,8 @@ const TabPanel = ({ mode, tabs, content, alts }) => {
                     } else {
                         return (
                             <div 
-                                className={''}
+                                role='tab'
+                                aria-selected={currentTab === i}
                             >
                                 {x}
                             </div>
@@ -42,7 +47,7 @@ const TabPanel = ({ mode, tabs, content, alts }) => {
                     }
                 })}
             </div>
-            <div className='tab-panel-content'>
+            <div className='tab-panel-content' role='tabpanel'>
                 {content.map((c, i) => {
                     return (
                         <div

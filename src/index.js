@@ -29,6 +29,21 @@ import GroupSexRoom from './rooms/group-sex-room';
 import PrivateRooms from './rooms/private-rooms';
 import PhotoBoothTemple from './rooms/photo-booth-temple';
 
+const loadObjectEvents = (room, ids, setHoveredSoundbiteID, setClickedSoundbiteID) => {
+  for (const id of ids) {
+    const el = document.getElementById(`${room}-${id}-outline`);
+    el.addEventListener('mouseenter', () => setHoveredSoundbiteID(id));
+    el.addEventListener('mouseleave', () => setHoveredSoundbiteID(null));
+    el.addEventListener('click', () => setClickedSoundbiteID(id));
+    el.addEventListener('keypress', e => {
+        if (e.key === ' ' || e.key === 'Enter') {
+            el.click();
+            document.getElementById('play-pause-button').focus();
+        }
+    });
+  }
+}
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -56,39 +71,39 @@ const router = createBrowserRouter([
       },
       {
         path: 'threshold',
-        element: <Threshold />
+        element: <Threshold loadObjectEvents={loadObjectEvents}/>
       },
       {
         path: 'dance-floor',
-        element: <DanceFloor />
+        element: <DanceFloor loadObjectEvents={loadObjectEvents}/>
       },
       {
         path: 'pool',
-        element: <Pool />
+        element: <Pool loadObjectEvents={loadObjectEvents}/>
       },
       {
         path: 'staircases',
-        element: <Staircases />
+        element: <Staircases loadObjectEvents={loadObjectEvents}/>
       },
       {
         path: 'cat-walk',
-        element: <CatWalk />
+        element: <CatWalk loadObjectEvents={loadObjectEvents}/>
       },
       {
         path: 'locker-room',
-        element: <LockerRoom />
+        element: <LockerRoom loadObjectEvents={loadObjectEvents}/>
       },
       {
         path: 'group-sex-room',
-        element: <GroupSexRoom />
+        element: <GroupSexRoom loadObjectEvents={loadObjectEvents}/>
       },
       {
         path: 'private-rooms',
-        element: <PrivateRooms />
+        element: <PrivateRooms loadObjectEvents={loadObjectEvents}/>
       },
       {
         path: 'photo-booth-temple',
-        element: <PhotoBoothTemple />
+        element: <PhotoBoothTemple loadObjectEvents={loadObjectEvents}/>
       }
     ]
   },

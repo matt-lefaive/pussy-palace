@@ -37,6 +37,7 @@ const FloorMap = ({ room }) => {
                         ${room === 'threshold' ? ' room-dropdown-active' : ''}
                         ${hoveredRoom === 'threshold' ? ' room-dropdown-li-hover' : ''}`
                     } 
+                    tabIndex='0'
                     data-path='threshold-path'>
                         1. The Threshold {room === 'threshold' && <LocationIcon />}
                 </li>
@@ -46,7 +47,8 @@ const FloorMap = ({ room }) => {
                         `room-dropdown-li 
                         ${room === 'dance-floor' ? ' room-dropdown-active' : ''}
                         ${hoveredRoom === 'dance-floor' ? ' room-dropdown-li-hover' : ''}`
-                    }  
+                    }
+                    tabIndex='0'
                     data-path='dance-floor-path'>
                         2. The Dance Floor {room === 'dance-floor' && <LocationIcon />}
                 </li>
@@ -57,6 +59,7 @@ const FloorMap = ({ room }) => {
                         ${room === 'pool' ? ' room-dropdown-active' : ''}
                         ${hoveredRoom === 'pool' ? ' room-dropdown-li-hover' : ''}`
                     }
+                    tabIndex='0'
                     data-path='pool-path'>
                         3. The Pool {room === 'pool' && <LocationIcon />}
                 </li>
@@ -66,7 +69,8 @@ const FloorMap = ({ room }) => {
                         `room-dropdown-li 
                         ${room === 'staircases' ? ' room-dropdown-active' : ''}
                         ${hoveredRoom === 'staircases' ? ' room-dropdown-li-hover' : ''}`
-                    } 
+                    }
+                    tabIndex='0'
                     data-path='staircases-path'>
                         4. The Staircases {room === 'staircases' && <LocationIcon />}
                 </li>
@@ -79,6 +83,7 @@ const FloorMap = ({ room }) => {
                         ${room === 'cat-walk' ? ' room-dropdown-active' : ''}
                         ${hoveredRoom === 'cat-walk' ? ' room-dropdown-li-hover' : ''}`
                     } 
+                    tabIndex='0'
                     data-path='cat-walk-path'>
                         5. The Cat Walk {room === 'cat-walk' && <LocationIcon />}
                 </li>
@@ -89,6 +94,7 @@ const FloorMap = ({ room }) => {
                         ${room === 'group-sex-room' ? ' room-dropdown-active' : ''}
                         ${hoveredRoom === 'group-sex-room' ? ' room-dropdown-li-hover' : ''}`
                     }
+                    tabIndex='0'
                     data-path='group-sex-room-path'>
                         6. The Group Sex Room {room === 'group-sex-room' && <LocationIcon />}
                 </li>
@@ -99,6 +105,7 @@ const FloorMap = ({ room }) => {
                         ${room === 'locker-room' ? ' room-dropdown-active' : ''}
                         ${hoveredRoom === 'locker-room' ? ' room-dropdown-li-hover' : ''}`
                     }
+                    tabIndex='0'
                     data-path='locker-room-path'>
                         7. The Locker Room {room === 'locker-room' && <LocationIcon />}
                 </li>
@@ -111,6 +118,7 @@ const FloorMap = ({ room }) => {
                         ${room === 'private-rooms' ? ' room-dropdown-active' : ''}
                         ${hoveredRoom === 'private-rooms' ? ' room-dropdown-li-hover' : ''}`
                     }
+                    tabIndex='0'
                     data-path='private-rooms-path'>
                         8. The Private Rooms {room === 'private-rooms' && <LocationIcon />}
                 </li>
@@ -123,6 +131,7 @@ const FloorMap = ({ room }) => {
                         ${room === 'photo-booth-temple' ? ' room-dropdown-active' : ''}
                         ${hoveredRoom === 'photo-booth-temple' ? ' room-dropdown-li-hover' : ''}`
                     }
+                    tabIndex='0'
                     data-path='photo-booth-temple-path'>
                     9. The Photo Booth/Temple {room === 'photo-booth-temple' && <LocationIcon />}
                 </li>
@@ -136,9 +145,14 @@ const FloorMap = ({ room }) => {
             if (roomOverlay) {
                 el.addEventListener('mouseenter', () => roomOverlay.setAttribute('fill', '#FFA1C3'));
                 el.addEventListener('mouseleave', () => roomOverlay.setAttribute('fill', '#565656'));
+                el.addEventListener('keypress', e => {
+                    if (e.key === ' ' || e.key === 'Enter') {
+                        el.click();
+                    }
+                });
             }
         });
-    })
+    });
 
     const closeIconOnClick = () => {
         document.getElementById('floor-map').className += ' hidden'
@@ -183,14 +197,7 @@ const FloorMap = ({ room }) => {
                 
             </div>
             <div className='floor-map-close-button-wrapper' style={{textAlign: 'right'}}>
-                <CloseIcon 
-                    onClick={closeIconOnClick}
-                    color='black'
-                    backgroundColor='#FF5C97'
-                    fontSize='30px'
-                    borderRadius='50%'
-                    border='1px solid black'
-                />
+                <CloseIcon onClick={closeIconOnClick}/>
             </div>
         </div>
         </>

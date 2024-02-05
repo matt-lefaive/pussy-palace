@@ -10,7 +10,7 @@ import VTTViewer from '../components/vtt-viewer';
 import captions from '../captions/captions.json';
 import '../styles/photo-booth-temple.css';
 
-const PhotoBoothTemple = () => {
+const PhotoBoothTemple = ({ loadObjectEvents }) => {
     const [hoveredSoundbiteID, setHoveredSoundbiteID] = useState(null);
     const [clickedSoundbiteID, setClickedSoundbiteID] = useState(null);
     const [currentSoundbiteID, setCurrentSoundbiteID] = useState(null);
@@ -68,18 +68,12 @@ const PhotoBoothTemple = () => {
     }
     
     useEffect(() => {
-        const ids = ['brushwood-rose', 'miklos', 'captured-for-posterity', 'powers'];
-        for (const id of ids) {
-            const el = document.getElementById(`photo-booth-temple-${id}-outline`);
-            el.addEventListener('mouseenter', () => setHoveredSoundbiteID(id));
-            el.addEventListener('mouseleave', () => setHoveredSoundbiteID(null));
-            el.addEventListener('click', () => setClickedSoundbiteID(id));
-        }
+        loadObjectEvents('photo-booth-temple', Object.keys(soundbites), setHoveredSoundbiteID, setClickedSoundbiteID);
     }, []);
 
     useEffect(() => {
         setCurrentSoundbiteID(clickedSoundbiteID ? clickedSoundbiteID : hoveredSoundbiteID)
-    }, [clickedSoundbiteID, hoveredSoundbiteID])
+    }, [clickedSoundbiteID, hoveredSoundbiteID]);
     
     const updateAudioTimestamp = timestamp => setAudioTimestamp(timestamp);
 

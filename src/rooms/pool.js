@@ -10,7 +10,7 @@ import VTTViewer from '../components/vtt-viewer';
 import captions from '../captions/captions.json';
 import '../styles/pool.css'
 
-const Pool = () => {
+const Pool = ({ loadObjectEvents }) => {
     const [hoveredSoundbiteID, setHoveredSoundbiteID] = useState(null);
     const [clickedSoundbiteID, setClickedSoundbiteID] = useState(null);
     const [currentSoundbiteID, setCurrentSoundbiteID] = useState(null);
@@ -68,18 +68,12 @@ const Pool = () => {
     }
     
     useEffect(() => {
-        const ids = ['campbell-smith', 'chan', 'mcgregor', 'cupid-board'];
-        for (const id of ids) {
-            const el = document.getElementById(`pool-${id}-outline`);
-            el.addEventListener('mouseenter', () => setHoveredSoundbiteID(id));
-            el.addEventListener('mouseleave', () => setHoveredSoundbiteID(null));
-            el.addEventListener('click', () => setClickedSoundbiteID(id));
-        }
+        loadObjectEvents('pool', Object.keys(soundbites), setHoveredSoundbiteID, setClickedSoundbiteID);
     }, []);
 
     useEffect(() => {
         setCurrentSoundbiteID(clickedSoundbiteID ? clickedSoundbiteID : hoveredSoundbiteID)
-    }, [clickedSoundbiteID, hoveredSoundbiteID])
+    }, [clickedSoundbiteID, hoveredSoundbiteID]);
     
     const updateAudioTimestamp = timestamp => setAudioTimestamp(timestamp);
 

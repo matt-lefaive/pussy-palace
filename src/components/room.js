@@ -23,12 +23,22 @@ const Room = ({ id, style, objects, decorations, ambient, soundbite }) => {
         resize();
         window.addEventListener('resize', resize);
     });
-    
+
     return (
         <div id={id} style={style} className='room'>
             <NavBar room={id}/>
             <FloorMap room={id}/>
-            {objects.map(o => <div className='room-object' id={o.id} key={o.id}>{o.component}</div>)}
+            {objects.map(o => {
+                return (
+                    <div 
+                        className='room-object' 
+                        id={o.id} 
+                        key={o.id} 
+                        tabIndex='0'>
+                            {o.component}
+                    </div>
+                )
+            })}
             {decorations.map(d => <div className='room-decoration' id={d.id} key={d.id}>{d.component}</div>)}
             {ambient && <AmbientAudioPlayer src={ambient}/>}
             {soundbite && <Transcription text={soundbite.transcription} citation={soundbite.citation}/>}

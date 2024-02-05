@@ -61,7 +61,7 @@ svg.clickable {
   transform: translateZ(1px);
 }
 
-svg.clickable:hover {
+svg.clickable:hover, .room-object:focus > svg.clickable {
   filter:
     drop-shadow(0 0 10px #ff5c97) 
     drop-shadow(0 0 10px #ff5c97);
@@ -536,12 +536,13 @@ ul.room-dropdown > a > li:hover {
   cursor: pointer;
 }
 
-.play-pause-button-wrapper > div,
-.transcript-button-wrapper > div,
-.cc-button-wrapper > div {
+.play-pause-button-wrapper,
+.transcript-button-wrapper,
+.cc-button-wrapper {
   display: table-cell;
   vertical-align: middle;
   font-size: 20px;
+  color: white;
 }
 
 .soundbite-progress-wrapper {
@@ -549,14 +550,20 @@ ul.room-dropdown > a > li:hover {
   padding-top: 19px;
 }
 
-.transcript-button-wrapper {
+button.transcript-button-wrapper {
+  appearance: auto;
   margin-left: 16px;
   margin-right: 16px;
+  border: 0px;
+  background-color: transparent;
 }
 
-.cc-button-wrapper {
+button.cc-button-wrapper {
+  appearance: auto;
   margin-right: 24px;
   display: table;
+  border: 0px;
+  background-color: transparent;
 }
 
 .soundbite-scrubber {

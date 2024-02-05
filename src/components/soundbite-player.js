@@ -112,14 +112,12 @@ const SoundbitePlayer = ({ src, autoplay, updateHeadshot, updateParentTimestamp 
             />
             
             <div className='soundbite-player-container'>
-                <div className='play-pause-button-wrapper' onClick={handlePlayPauseClick}>
-                    <div>
-                        {isPlaying 
-                            ? <PauseIcon color={'black'}/> 
-                            : <PlayIcon color={'black'}/>
-                        }
-                    </div>
-                </div>
+                <button id='play-pause-button' className='play-pause-button-wrapper' onClick={handlePlayPauseClick}>
+                    {isPlaying
+                        ? <PauseIcon color={'black'}/>
+                        : <PlayIcon color={'black'}/>
+                    }
+                </button>
                 <div className='soundbite-progress-wrapper'>
                     <SoundbiteScrubber 
                         percent={percentPlayed} 
@@ -134,16 +132,12 @@ const SoundbitePlayer = ({ src, autoplay, updateHeadshot, updateParentTimestamp 
                         </div>
                     </div>
                 </div>
-                <div className='transcript-button-wrapper'>
-                    <div>
-                        <TranscriptIcon id='transcript-icon' onClick={handleTranscriptIconClick}/>
-                    </div>
-                </div>
-                <div className='cc-button-wrapper'>
-                    <div>
-                        <CCIcon id='cc-icon' onClick={handleCCIconClick}/>
-                    </div>
-                </div>
+                <button className='transcript-button-wrapper' onClick={handleTranscriptIconClick}>
+                    <TranscriptIcon id='transcript-icon' />
+                </button>
+                <button className='cc-button-wrapper' onClick={handleCCIconClick}>
+                    <CCIcon id='cc-icon' />
+                </button>
             </div>
         </>
     )

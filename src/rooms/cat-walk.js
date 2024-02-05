@@ -12,7 +12,7 @@ import VTTViewer from '../components/vtt-viewer';
 import captions from '../captions/captions.json';
 import '../styles/cat-walk.css';
 
-const CatWalk = () => {
+const CatWalk = ({ loadObjectEvents }) => {
     const [hoveredSoundbiteID, setHoveredSoundbiteID] = useState(null);
     const [clickedSoundbiteID, setClickedSoundbiteID] = useState(null);
     const [currentSoundbiteID, setCurrentSoundbiteID] = useState(null);
@@ -92,18 +92,12 @@ const CatWalk = () => {
     }
     
     useEffect(() => {
-        const ids = ['mallette', 'roberton', 'tough-sweet', 'irwin', 'campbell-smith', 'dutrizac'];
-        for (const id of ids) {
-            const el = document.getElementById(`cat-walk-${id}-outline`);
-            el.addEventListener('mouseenter', () => setHoveredSoundbiteID(id));
-            el.addEventListener('mouseleave', () => setHoveredSoundbiteID(null));
-            el.addEventListener('click', () => setClickedSoundbiteID(id));
-        }
+        loadObjectEvents('cat-walk', Object.keys(soundbites), setHoveredSoundbiteID, setClickedSoundbiteID);
     }, []);
 
     useEffect(() => {
         setCurrentSoundbiteID(clickedSoundbiteID ? clickedSoundbiteID : hoveredSoundbiteID)
-    }, [clickedSoundbiteID, hoveredSoundbiteID])
+    }, [clickedSoundbiteID, hoveredSoundbiteID]);
     
     const updateAudioTimestamp = timestamp => setAudioTimestamp(timestamp);
 

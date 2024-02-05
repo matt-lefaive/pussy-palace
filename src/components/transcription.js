@@ -9,10 +9,8 @@ const Transcription = ({ text, citation }) => {
     }
     
     return (
+        
         <div id='transcription-container' className='transcription-container hidden'>
-            <div className='close-button-wrapper' style={{textAlign: 'right'}}>
-                <CloseIcon onClick={onClickCloseTranscript}/>
-            </div>
             <div id='transcription-text' style={{textAlign: 'left', whiteSpace: 'pre-wrap'}}>
                 {text}
             </div>
@@ -22,7 +20,11 @@ const Transcription = ({ text, citation }) => {
             <div id='transcription-citation'>
                 {citation}
             </div>
+            <div className='floor-map-close-button-wrapper' style={{textAlign: 'right'}}>
+                <CloseIcon onClick={onClickCloseTranscript}/>
+            </div>
         </div>
+    
     )
 }
 

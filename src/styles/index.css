@@ -76,24 +76,24 @@ h3 {
   flex-shrink: 0;
 }
 
-.sidemenu a {
+.sidemenu a, .sidemenu a:visited {
   display: block;
   margin-top: 36px;
   font-size: 19px;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.2px;
-  color: #C4C4C4;
+  color: #C4C4C4 !important;
   text-decoration: none;
 }
 
 .sidemenu a:hover {
   text-decoration: underline;
-  color: white;
+  color: white !important;
 }
 
 .sidemenu a.active {
-  color: #FF5C97;
+  color: #FF5C97 !important;
 }
 
 .sidemenu-links-wrapper {

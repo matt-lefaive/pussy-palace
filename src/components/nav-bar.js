@@ -43,16 +43,18 @@ const NavBar = ({ room }) => {
 
     return (
         <div className={'navigation-panel' + showNavBar} style={{width: navBarWidth}}>
-            {prevRoom && <Link className='previous-room-button' to={prevRoom.url}><LeftArrow /> {prevRoom.text}</Link>}
+            {prevRoom && <Link id='previous-room-link' to={prevRoom.url} style={{display: 'hidden'}}></Link>}
+            {prevRoom && <button className='previous-room-button' onClick={() => document.getElementById('previous-room-link').click()}><LeftArrow /> {prevRoom.text}</button>}
             <div className='navigation-menu-buffer'></div>
-            <a className='home-button' href='/#skip'>
+            <button className='home-button' onClick={() => window.location.href = '/#skip'}>
                 <HomeIcon /> Home
-            </a>
-            <div className='map-button' onClick={floorMapOnClick}>
+            </button>
+            <button className='map-button' onClick={floorMapOnClick}>
                 <MapIcon /> Map
-            </div>
+            </button>
             <div className='navigation-menu-buffer'></div>
-            {nextRoom && <Link className='next-room-button' to={nextRoom.url}>{nextRoom.text} <RightArrow /></Link>}
+            {nextRoom && <Link id='next-room-link' to={nextRoom.url} style={{display: 'hidden'}}></Link>}
+            {nextRoom && <button className='next-room-button' onClick={() => document.getElementById('next-room-link').click()}>{nextRoom.text} <RightArrow /></button>}
         </div>
     )
 }
