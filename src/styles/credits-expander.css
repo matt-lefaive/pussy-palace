@@ -1,0 +1,36 @@
+
+.credits-button-wrapper {
+    text-align: right;    
+}
+
+.credits-button-wrapper a {
+    color: #21212188;
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.credits-button-wrapper span {
+    color: white;
+    background-color: #21212188;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 17px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+.credits-button-wrapper span:hover {
+    cursor: pointer;
+}
+
+.credits-content {
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: #212121;
+}

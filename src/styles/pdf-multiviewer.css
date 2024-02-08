@@ -1,0 +1,35 @@
+.pdf-multiviewer {
+    position: relative;
+}
+
+.pdf-multiviewer-caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    padding: 16px;
+    width: 100%;
+}
+
+button.pdf-multiviewer-prev-button,
+button.pdf-multiviewer-next-button {
+    all: unset;
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    font-weight: 900;
+    font-size: 50px;
+    font-family: Chalkboard;
+}
+
+button.pdf-multiviewer-prev-button:hover,
+button.pdf-multiviewer-next-button:hover {
+    cursor: pointer;
+}
+
+button.pdf-multiviewer-prev-button {
+    left: 20px;
+}
+
+button.pdf-multiviewer-next-button {
+    right: 20px;
+}
