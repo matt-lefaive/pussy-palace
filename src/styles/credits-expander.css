@@ -4,7 +4,7 @@
 }
 
 .credits-button-wrapper a {
-    color: #21212188;
+    color: white;
     font-family: Montserrat, sans-serif;
     font-size: 17px;
     text-decoration: none;
@@ -12,8 +12,8 @@
 }
 
 .credits-button-wrapper span {
-    color: white;
-    background-color: #21212188;
+    color: #212121;
+    background-color: white;
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -32,5 +32,4 @@
 .credits-content {
     font-size: 14px;
     font-family: Montserrat, sans-serif;
-    color: #212121;
 }

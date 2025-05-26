@@ -8,6 +8,7 @@
     background: rgba(0,0,0,0.6);
     padding: 16px;
     width: 100%;
+    font-size: 14px;
 }
 
 button.pdf-multiviewer-prev-button,
@@ -21,8 +22,19 @@ button.pdf-multiviewer-next-button {
     font-family: Chalkboard;
 }
 
+button.pdf-multiviewer-download {
+    all: unset;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    font-weight: 900;
+    position: absolute;
+    font-family: Chalkboard;
+}
+
 button.pdf-multiviewer-prev-button:hover,
-button.pdf-multiviewer-next-button:hover {
+button.pdf-multiviewer-next-button:hover,
+button.pdf-multiviewer-download:hover {
     cursor: pointer;
 }
 

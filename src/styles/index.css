@@ -52,9 +52,27 @@ h3 {
   text-align: center;
 }
 
+.content-page-subheader {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  font-size: 25px;
+}
+
+.text-page-inline-caption {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  font-style: italic;
+}
+
 /* ----- Dividers ----- */
 .divider {
   height: 3px;
+  background-color: white;
+}
+
+.thin-divider {
+  height: 1px;
   background-color: white;
 }
 
@@ -67,15 +85,17 @@ h3 {
   display: flex;
   align-items: stretch;
   padding-top: 40px;
+  overflow: auto;
 }
 
 .sidemenu {
-  width: 340px;
+  width: 350px;
   padding-left: 80px;
   color: white;
   box-sizing: border-box;
   overflow: scroll;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .sidemenu a, .sidemenu a:visited {
@@ -107,42 +127,61 @@ h3 {
 /* ----- Content Pane | Right Side ----- */
 .content {
   padding: 0px 80px 0px 60px;
-  overflow-y: auto;
-  height: calc(100vh - 40px);
+  margin: 0 auto;
+  max-width: 1355px;
+  font-size: 19px;
 }
 
 .title-section {
-  text-align: center;
   margin-top: 70px;
 }
 
 h2.content-title {
   font-size: 28px;
   line-height: 32px;
-  margin-top: 0;
+  margin-top: 60px;
 }
 
 h3.content-subtitle {
   font-size: 22px;
   letter-spacing: 2px;
   margin-top: -16px;
+  margin-bottom: 60px;
 }
 
 img.banner {
   height: auto;
   max-width: 100%;
-  border-top: 3px solid white;
   width: auto\9 /* IE8 */
 }
 
 .content h3 {
   color: #FF5C97;
-  font-size: 20px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.content .uppercase {
+  text-transform: uppercase;
+}
+
+.content h3.tab-heading {
+  font-size: 25px;
+}
+
+.content h3 svg {
+  height: 20px;
+  margin-right: 10px;
 }
 
 .content a {
-  color: #FF5C97;
+  color: #4a9fec;
   font-weight: bold;
+}
+
+.content p {
+  line-height: 1.4;
 }
 
 .grey-box {
@@ -173,21 +212,99 @@ img.banner {
   width: 100%;
 }
 
+p.video-description {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 0;
+  color: #DDD;
+}
+
+p.pdf-credits {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
+p.pdf-viewer-title {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .split-66-33,
-.split-33-66 {
+.split-33-66, 
+.split-60-40,
+.split-40-60,
+.split-50-50 {
   display: flex;
-  gap: 30px;
+  gap: 75px;
   margin-bottom: 30px;
 }
 
 .split-66-33 div:first-child,
 .split-33-66 div:last-child {
-  flex: 1 0 calc(66.66% - 30px);
+  flex: 1 0 calc(66.66% - 75px);
 }
 
 .split-66-33 div:last-child,
 .split-33-66 div:first-child {
-  flex: 1 0 calc(33.33% - 30px);
+  flex: 1 0 calc(33.33% - 75px);
+}
+
+.split-60-40 div:first-child,
+.split-40-60 div:last-child {
+  flex: 1 0 calc(60% - 75px);
+}
+
+.split-60-40 div:last-child,
+.split-40-60 div:first-child {
+  flex: 1 0 calc(40% - 75px);
+}
+
+.split-50-50 div {
+  flex: 1 0 calc(50% - 75px);
+}
+
+.listen-button {
+  display: flex;
+  font-family: Montserrat;
+  font-size: 19px;
+  font-weight: bold;
+  color: #FF5C97;
+  background-color: transparent;
+  border: none;
+}
+
+.listen-button:hover {
+  cursor: pointer;
+}
+
+.listen-button svg {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.tab-switch-button {
+  display: flex;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  color: #FF5C97;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 60px;
+}
+
+.next-tab-button {
+  float: right;
+}
+
+.prev-tab-button {
+  float: left;
+}
+
+.tab-switch-button:hover {
+  cursor: pointer;
 }
 
 

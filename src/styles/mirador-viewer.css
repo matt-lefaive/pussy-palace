@@ -1,0 +1,9 @@
+.mirador-viewer-container {
+    position: relative;
+    height: 400px;
+}
+
+.mirador-viewer-container > .fullscreen > div {
+    width: 100%;
+    height: 100%;
+}
