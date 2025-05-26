@@ -4,7 +4,7 @@ import '../styles/credits-expander.css';
 const CreditsExpander = ({ content }) => {
     const [creditsVisible, setCreditsVisible] = useState(false);
 
-    let expanderIcon = creditsVisible ? '—' : '+';
+    let expanderIcon = creditsVisible ? '-' : '+';
 
     return (
         <div className='credits-expander'>

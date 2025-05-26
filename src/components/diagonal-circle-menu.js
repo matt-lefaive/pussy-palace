@@ -23,7 +23,7 @@ const DiagonalCircleMenu = () => {
             {title: 'Building the Palace', subtitle: 'Radical Sex Organizing', date:'1998 - 2000'},
             {title: 'Explore the Palace', subtitle: 'An Average Night', date:'2000'},
             {title: 'Raid on the Palace', subtitle: 'The Night of 2000 Pussies', date:'2000 - 2005'},
-            {title: 'After the Palace', subtitle: 'Researcher Reflections', date:'2021 - 2022'}
+            {title: 'After the Palace', subtitle: 'Researcher Reflections', date:'2005 - 2024'}
         ][activeCircle - 1]);
 
         // Set the target link for navigation if clicked

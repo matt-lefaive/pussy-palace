@@ -12,7 +12,7 @@ const Transcription = ({ text, citation }) => {
         
         <div id='transcription-container' className='transcription-container hidden'>
             <div id='transcription-text' style={{textAlign: 'left', whiteSpace: 'pre-wrap'}}>
-                {text}
+                {/*{text}*/}
             </div>
             <div id='citation-title'>
                 CITATION
