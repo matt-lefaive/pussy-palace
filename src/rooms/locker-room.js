@@ -29,8 +29,9 @@ const LockerRoom = ({ loadObjectEvents }) => {
             narrators: ['Chan'],
             narratorTimings: [0],
             transcription: `I was experimenting with what it would feel like to be sexualized on terms that are mine. My early life was the opposite of that. I felt, like, zero sexualization as a “not out” but “out” just because of how I looked, ostracized, freak of nature. And I identify as someone who was, like, sexually curious very early. And so, it felt like I had been waiting for, like, two decades to be a sexual person. And so, I had a lot of catching up to do. I really wanted to be seen as desirable. And so, I was experimenting with: What does it mean to be a sexualizable, to be a desirable, person? And then, I was also having fun. And so, I really saw the bathhouse as, like, a fun place where, like, anything goes. And if I want to wear a rubber duck on my head, then that’s great. The more I was a part of organizing it, the more freedom I felt to say, “This is my house. So, I can be how I want.”`,
-            citation: 'Chan, K. B. K. (Narrator). (2022). The locker room: Sexualized on my own terms [Audio soundbite]. In The history of the Pussy Palace: A digital exhibit. LGBTQ Oral History Digital Collaboratory. https://URL of soundbite webpage location',
-            captions: 'LockerRoom_Chan_Captions'
+            citation: 'Stranges, Alisha, and Elspeth Brown. “Explore the Palace: Sexualized on My Own Terms.” Narrated by Karen B. K. Chan. Illustration by Ayo Tsalithaba. Produced by LGBTQ Oral History Digital Collaboratory. The History of the Pussy Palace: A Digital Exhibit. 2024. Audio recording, 1:17. ',
+            captions: 'LockerRoom_Chan_Captions',
+            explicit: false
         },
         'dutrizac': {
             title: 'HEAR IT FROM STEPHANIE',
@@ -40,8 +41,9 @@ const LockerRoom = ({ loadObjectEvents }) => {
             narrators: ['Dutrizac'],
             narratorTimings: [0],
             transcription: `We probably ran right to the lockers to get ourselves organized. Take off our street clothes, got ourselves all dressed up, and then kind of got ready. And then, probably right after that, I would have walked around and, like, surveyed the space and did a bit of strutting and did a bit of walkabout. It was dirty, [laughs] smelly, cramped, dark and humid. And I loved all of it. It felt like a gay men’s space that we were taking over. And as a leather, kinky pervert, that is super exciting.`,
-            citation: 'Dutrizac, S. (Narrator). (2022). The locker room: Lockers then strut [Audio soundbite]. In The history of the Pussy Palace: A digital exhibit. LGBTQ Oral History Digital Collaboratory. https://URL of soundbite webpage location',
-            captions: 'LockerRoom_Dutrizac_Captions'
+            citation: 'Stranges, Alisha, and Elspeth Brown. “Explore the Palace: Lockers then Strut.” Narrated by Stephanie Dutrizac. Illustration by Ayo Tsalithaba. Produced by LGBTQ Oral History Digital Collaboratory. The History of the Pussy Palace: A Digital Exhibit. 2024. Audio recording, 0:34.',
+            captions: 'LockerRoom_Dutrizac_Captions',
+            explicit: false
         },
         'perry': {
             title: 'HEAR IT FROM LYNDA J.',
@@ -51,8 +53,9 @@ const LockerRoom = ({ loadObjectEvents }) => {
             narrators: ['Perry'],
             narratorTimings: [0],
             transcription: `I’m sort of like in the locker room, but I’m not connecting with anybody in the locker room. I don’t know why I’m there. I don’t know, maybe I just wanted to get away from a crowded space or something. Except, I think I was looking for something that I couldn’t find. Ended up losing my flogger there. Yeah, the nice one with the ball, the crystal ball on it, on the top. You know, there’s a place in New York called the Hellfire Club. I don’t think it exists anymore. And it would be closer to... Almost like a gay male place, in a way. A lot of the men who went there were wankers. [laughs] And they would just wank right on the floor. Like, it was all full of semen. But it was a scene. But sometimes people go in there and sell things, like whips and things that they make or have, and that’s where I got it.`,
-            citation: 'Perry, L. J. (Narrator). (2022). The locker room: The lost flogger [Audio soundbite]. In The history of the Pussy Palace: A digital exhibit. LGBTQ Oral History Digital Collaboratory. https://URL of soundbite webpage location',
-            captions: 'LockerRoom_Perry_Captions'
+            citation: 'Stranges, Alisha, and Elspeth Brown. “Explore the Palace: The Lost Flogger.” Narrated by Lynda J. Perry. Illustration by Ayo Tsalithaba. Produced by LGBTQ Oral History Digital Collaboratory. The History of the Pussy Palace: A Digital Exhibit. 2024. Audio recording, 0:53.',
+            captions: 'LockerRoom_Perry_Captions',
+            explicit: true
         },
         'racine': {
             title: 'HEAR IT FROM RENEE',
@@ -62,8 +65,9 @@ const LockerRoom = ({ loadObjectEvents }) => {
             narrators: ['Racine'],
             narratorTimings: [0],
             transcription: `Renee Racine\nI spent a fair amount of time in the locker area, before my shift, because there were hours before I went on shift. I was talking to someone; she had recently been broken up with by her girlfriend. She was awfully cute, and I was just, you know, consoling her. You know, we were sitting on the floor with our backs against the lockers. It smelled like chlorine, a little bit like sweat. And it was greenish. But, overall, it was that warm red of the lobby that I would call out as my overarching colour. The steam. The wet walls. Slippery. Slippery under your touch. Something that is transient; it’s only there for a minute and then it’s gone.   `,
-            citation: 'Racine, R. (Narrator). (2022). The locker room: Slippery when wet [Audio soundbite]. In The history of the Pussy Palace: A digital exhibit. LGBTQ Oral History Digital Collaboratory. https://URL of soundbite webpage location',
-            captions: 'LockerRoom_Racine_Captions'
+            citation: 'Stranges, Alisha, and Elspeth Brown. “Explore the Palace: Slippery When Wet.” Narrated by Renee Racine. Illustration by Ayo Tsalithaba. Produced by LGBTQ Oral History Digital Collaboratory. The History of the Pussy Palace: A Digital Exhibit. 2024. Audio recording, 0:53.',
+            captions: 'LockerRoom_Racine_Captions',
+            explicit: false
         },
     }
     
