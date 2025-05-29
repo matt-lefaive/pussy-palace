@@ -47,7 +47,7 @@ const CatWalk = ({ loadObjectEvents }) => {
             captions: 'CatWalk_Roberton_Captions',
             explicit: false
         },
-        'tough-sweet': {
+        'tough-sweet': { 
             title: 'HEAR IT FROM MANY',
             subtitle: 'Tough & Sweet',
             description: 'Leather, lace, PVC...what’s not to like? Dynamic duo Ange Beever and Robin Woodward describe their classic “butch and femme” attire.',
